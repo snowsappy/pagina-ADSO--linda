@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 *{
     border: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .navBar {
@@ -130,7 +133,7 @@ input{display: none}
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 89.6%;
+    width: 100%;
     min-height: 100vh;
     position: relative;
     z-index: 1;
@@ -151,7 +154,7 @@ input{display: none}
     width: 500px;
     padding: 20px 0px;
     position: relative;
-    top: 7vh;
+    top: 6vh;
    
 }
 .hero-image{
@@ -181,4 +184,16 @@ input{display: none}
 .mini-images img{
    
     width: 150%;
+}
+.productos{
+    margin:100px;
+}
+.filtros{
+    margin:100px;
+}
+
+h1 {
+    font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
