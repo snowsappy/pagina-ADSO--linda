@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
 
 *{
     border: 0;
@@ -21,19 +22,23 @@
     gap: 80px;
     padding: 0;
     margin: 0;
-
+    font-family: "manjari";
+    font-size: 22px;
 }
 
 .logo{
      
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+ 
 }
 .logo img{
    width: 80%;
   
    display: flex;
    justify-content: center;
+   
 }
 .iconos {
     display: flex;
@@ -77,7 +82,7 @@ header{
 }
 .button{
     background-color: #FFAAA5;
-    width: 1200px;
+    width: 63.3%;
     height: 60px;
     border-radius: 200px;
     cursor: pointer;
@@ -88,12 +93,12 @@ header{
 }
 .button::before{
     background-image: url(./images/Gift.png);
-     background-image: url("./images/dulce.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40px;
+    background-size: 55px;
     position: absolute;
     content: "";
+    
     background-color: #FF8D8D;
     width: 150px;
     height: 60px;
@@ -106,6 +111,12 @@ input:checked+.button{
 }
 input:checked + .button::before{
     transform: translate(-1050px);
+    
+    background-image: url(./images/usuario\ temporal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    position: absolute;
 }
 
 input{display: none}
@@ -124,7 +135,7 @@ input{display: none}
 }
 /*hero*/
 .hero{
-    background-image: url(./images/upscalemedia-transformed.png);
+   background: #e4cece;
     
     background-size: cover;
     background-position: center;
@@ -136,7 +147,17 @@ input{display: none}
     width: 100%;
     min-height: 100vh;
     position: relative;
-    z-index: 1;
+    
+    
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    background-color: #ff0000;
+    width: 40%;
+    height: 30%;
+    border-radius: 50%;
+    clip-path: shape(from 90.89%  45.64% Px1(60%) Py1(5%),curve to Px2(65%) Py2(5) with Cx1 Cy1,curve to Px3 Py3 with Cx2 Cy2,);
 }
 .hero h1{
     font-size: 100px;
@@ -154,14 +175,25 @@ input{display: none}
     width: 500px;
     padding: 20px 0px;
     position: relative;
-    top: 6vh;
+    top: 5vh;
    
+}
+.linea{
+    width: 27%;
+    height: 1.1%;
+    background-color: #e4cece;
+    position: absolute;
+    top: 111%;
+    
+    left: 82%;
 }
 .hero-image{
     position: relative;
     display: flex;
     justify-content: end;
     top: 10vh;
+    right: 8%;
+    width: 53%;
 }
 .hero-image img{
 
@@ -170,8 +202,9 @@ input{display: none}
 }
 .mini-images{
     position: relative;
-    top: 90px;
+    top: 70px;
 }
+
 .mini-images ul{
     
     list-style: none;
@@ -191,9 +224,14 @@ input{display: none}
 .filtros{
     margin:100px;
 }
-
+.hero-content p{
+    color: #300d0d;
+    font-family:"manjari";
+    font-size: 25px;
+    font-weight: 400;
+}
 h1 {
     font-family: "Lilita One", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
