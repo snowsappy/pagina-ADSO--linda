@@ -153,11 +153,21 @@ input{display: none}
 .hero::before{
     content: "";
     position: absolute;
-    background-color: #ff0000;
-    width: 40%;
-    height: 30%;
-    border-radius: 50%;
-    clip-path: shape(from 90.89%  45.64% Px1(60%) Py1(5%),curve to Px2(65%) Py2(5) with Cx1 Cy1,curve to Px3 Py3 with Cx2 Cy2,);
+   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(./images/j.png);
+   
+}
+.hero::after{
+     content: "";
+    position: absolute;
+   background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(./images/j.png);
 }
 .hero h1{
     font-size: 100px;
@@ -199,6 +209,7 @@ input{display: none}
 
     top: 50%;
     width: 60%;
+
 }
 .mini-images{
     position: relative;
@@ -273,7 +284,7 @@ h1 {
 
 .compra{
      background-color: #ff5e5e;
-    padding: 24px 50px 24px 50px;
+    padding: 24px 8px 24px 8px;
     height: 60px;
     border-radius: 9px;
     cursor: pointer;
@@ -290,6 +301,7 @@ h1 {
     height: 400px;
     overflow: hidden;
     border-radius: 15px;
+
 }
 
 .image img{
@@ -298,8 +310,9 @@ h1 {
     object-fit: contain;
     object-position: center;
     object-fit: fill;
-   
+    
 }
+
 .precio-compra{
     
     display: flex;
@@ -324,6 +337,9 @@ h1 {
     align-content: center;
     align-items: end;
     
+}
+.espacios img{
+    width: 25%;
 }
 .espacios h4{
     
@@ -404,6 +420,7 @@ h1 {
     
     
 }
+
 /*botones naivgacionales*/
 .botones-pagina{
     display: flex;
@@ -442,13 +459,48 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: #572610;
-    padding:2%
-
+    background-color:#605656;
+    padding:2%;
+    align-items: center;
+    
+    
+    
 }
 .pie ul{
     list-style: none;
     display: flex;
     gap: 20px;
 
+}
+.logo-footer{
+   
+     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo-footer img{
+     width: 13vh;
+}
+.image-footer{
+    
+}
+.image-footer img{
+    
+    width: 40px;
+    height: 40px;
+    
+}
+.lado-izquierdo {
+    
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.lado-izquierdo img{
+    width: 50px;
+}
+.lado-izquierdo p{
+    font-family: "manjari";
+    color: #f5f5f5;
+    font-weight: 400;
 }
