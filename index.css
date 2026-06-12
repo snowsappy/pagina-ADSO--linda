@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 *{
     border: 0;
     margin: 0;
@@ -46,7 +46,7 @@
     gap: 25px;
 }
 .iconos img{
-    width: 40%;
+    width: 15%;
 }
 
 .menu a {
@@ -147,23 +147,35 @@ input{display: none}
     width: 100%;
     min-height: 100vh;
     position: relative;
-    
+    z-index: 0;
     
 }
-/*
+.hero::after{
+     content: "";
+    background-image: url(./images/k.png);
+    height: 58%;
+    width: 20%;
+    background-size: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 .hero::before{
     content: "";
     background-image: url(./images/j.png);
     height: 100%;
-    width: 100%;
-    background-size: 40%;
+    width: 40%;
+    background-size: 100%;
     position: absolute;
-    left: 60%;
-    bottom: 10%;
+    right: 0%;
+    bottom: 0%;
     background-repeat: no-repeat;
 }
 
-*/
+
+
     
 .hero h1{
     font-size: 100px;
@@ -224,12 +236,35 @@ input{display: none}
 .mini-images img{
    
     width: 150%;
+    
 }
 .productos{
-    margin:100px;
+    margin:10px;
+}
+.filtros summary{
+    display: flex;
+
+    list-style: none;
+    cursor: pointer;
+    border: 1px solid;
+    font-family: "manjari";
+    font-size: 30px;
+    width: 200px;
+    padding: 20px 45px 10px 45px;
+    border-radius: 35px;
+    color: #EA6872;
+    gap: 10px;
+    
+}
+.filtros summary img{
+    width: 25px;
+    height: 25px;
+}
+summary::-webkit-details-marker{
+    display: none;
 }
 .filtros{
-    margin:100px;
+    padding: 70px 0px 0px 257px;
 }
 .hero-content p{
     color: #300d0d;
@@ -242,6 +277,7 @@ h1 {
   font-weight: 700;
   font-style: normal;
 }
+
 .productos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -275,13 +311,14 @@ h1 {
 .texto-caja{
     font-family: "manjari";
     justify-content: space-between;
-
+    
 }
 
 .compra{
      background-color: #ff5e5e;
-    padding: 24px 8px 24px 8px;
+    padding: 24px 0px 24px 0px;
     height: 60px;
+    width: 150px;
     border-radius: 9px;
     cursor: pointer;
     position: relative;
@@ -303,9 +340,10 @@ h1 {
 .image img{
     width: 100%;
     height: 120%;
-    object-fit: contain;
+
     object-position: center;
     object-fit: fill;
+  
     
 }
 
@@ -335,7 +373,8 @@ h1 {
     
 }
 .espacios img{
-    width: 25%;
+    width: 29%;
+    
 }
 .espacios h4{
     
@@ -366,11 +405,12 @@ h1 {
     margin-left: 7%;
 }
 
-.video-image img{
-    width: 120%;
-    object-fit: contain;
-    object-position: center;
-    object-fit: fill;
+.video-image video{
+    
+       width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .image-promotional{
@@ -455,7 +495,7 @@ position: relative;
     border-radius: 20px;
     justify-items: end;   
     padding: 20px;
-    gap: 30px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -464,29 +504,93 @@ position: relative;
     width: 400px;
     height: 400px;
     overflow: hidden;
+    
     border-radius: 15px;
-    clip-path: polygon(100% 0, 100% 62%, 76% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 67%, 76% 100%, 0 100%, 0 0);
     position: relative;
 }
-
 .boton-image img{
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
-    object-fit: fill;
-   
 }
+
+
 
 .boton{
     position :absolute;
     z-index: 10;
-    left: 83.8%;
-    top: 415%;
+    left: 82.6%;
+     top: 396.9%;
     color: #572610;
     background-color: #21775d;
     clip-path: circle();
-    padding: 16px;
+    padding: 13px;
+    
+}
+.boton1 {
+     position :absolute;
+    z-index: 10;
+    left: 30.8%;
+    top: 396.9%;
+    color: #572610;
+    background-color: #21775d;
+    clip-path: circle();
+    padding: 13px;
 }
 
+.boton2{
+    font-family: "manjari";
+     position :absolute;
+    z-index: 10;
+    left: 56.6%;
+    top: 396.9%;
+    color: #572610;
+    background-color: #21775d;
+    clip-path: circle();
+    padding: 13px;
+
+}
+.boton img{
+    width: 26%;
+}
+.boton1 img{
+    width: 26%;
+}
+.boton2 img{
+    width: 26%;
+}
+.pedidos h4{
+    font-family: "manrope";
+    font-weight: 600;
+    font-size: 28px;
+}
+.pedidos p{
+    font-family: "manjari";
+    font-size: 15px;
+}
+
+/*filtros*/
+
+.filtros ul{
+    display: flex;
+    list-style: none;
+    gap: 20px ;
+    padding: 20px;
+    
+}
+.filtros li{
+    color: #EA6872;
+    border: 1px solid;
+    padding: 7px 20px 9px 20px;
+    border-radius: 50px;
+}
+.filtros li p{
+    font-family: "manrope";
+    color: #605656;
+    font-size: 25px;
+}
 /*pie de pagina*/
 .pie{
     display: flex;
@@ -495,9 +599,7 @@ position: relative;
     background-color:#605656;
     padding:2%;
     align-items: center;
-    
-    
-    
+   
 }
 .pie ul{
     list-style: none;
@@ -505,6 +607,7 @@ position: relative;
     gap: 20px;
 
 }
+
 .logo-footer{
    
      position: absolute;
@@ -524,14 +627,18 @@ position: relative;
 .lado-izquierdo {
     
     display: flex;
-    align-items: center;
-    gap: 5px;
+   align-items: center;
+   
+    gap: 16px;
 }
 .lado-izquierdo img{
-    width: 50px;
+    width: 60px;
 }
 .lado-izquierdo p{
+    text-decoration: underline;
+    padding-top:15px;
     font-family: "manjari";
     color: #f5f5f5;
+    font-size: 25px;
     font-weight: 400;
 }
