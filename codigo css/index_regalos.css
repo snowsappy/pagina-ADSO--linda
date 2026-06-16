@@ -152,11 +152,13 @@ input{display: none}
         #D3C5F6 70%,
         #D3C5F6 100%
     );
+    
+    
 }
 
 .contenido-hero{
-     padding: 10%;
-   
+     padding-top: 5%;
+    padding-left: 10%;
   
 }
 
@@ -182,119 +184,99 @@ input{display: none}
 }
 
 .hero-imagen img{
+    
+    position: relative;
     width: 100%;
+    padding-right: 10%;
+    right: 10%;
+    top: 50px;
     
 }
 
 .contenido-hero button{
     
     background: none;
-
-    border: solid 2px;
+    padding: 10px 20px 10px 20px;
+    border: solid 1px;
     border-radius: 200px;
     color: #D3C5F6;
 }
+.filtros ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5%;
+    padding: 0px;
+}
+.filtros li{
+    display: flex;
+    border: 1px solid;
+    width: 12%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    font-family: "manjari";
+    font-size: 30px;
+    padding: 0px;
+    padding-top: 0.5%;
+}
+
+.filtros{
+   margin-top: 2.5%; 
+   margin-left: 5.2%;
+   margin-right: 5.2%;
+   padding: 0px;
+}
 /*cada productos*/
 
-.productos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
-    
 
-    gap: 50px;
-    margin-left: 14%;
-    margin-right: 14%;
-    justify-items: center;
+/* canasta de regalo */
+.canastita article{
+    display: flex;
     justify-content: center;
-    padding: 50px;
-} 
-
-.caja{
-    gap: 40%;
 }
-.caja article{
+.canastita li{
+    display: flex;
+    width: 400px;
+    height: 55px;
+    gap: 70px;
     background-color: #FFF2ED;
-    height: 600px;
-    border-radius: 20px;
-    justify-items: end;   
-    padding: 15px;
-    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.botoncito{
+    position: relative;
+    top: 20px;
+    left: 40PX;
+    width: 91%;
+    height: 75px;
+    border-radius: 15px;
+    color: #F5f5f5;
+    background-color: #FF8751;
+    font-family: "manjari";
+    font-size: 3vh;
+}
+
+.regalosagre ul{
+
     display: flex;
     flex-direction: column;
-}
-.texto-caja{
-    font-family: "manjari";
-    justify-content: space-between;
-    color: #6F2E14;
+    
+    gap: 20px;
 }
 
-.compra{
-     background-color: #FF716C;
-    padding: 24px 0px 24px 0px;
-    height: 60px;
-    width: 150px;
-    border-radius: 9px;
-    cursor: pointer;
-    position: relative;
+/* BOTONES PAGINAS */
+.botones-pagina{
     display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-items: center;
     justify-content: center;
-    align-items:center;
-}
-
-
-.image{
-   
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 15px;
-
-}
-
-.image img{
-    width: 100%;
-    height: 120%;
-
-    object-position: center;
-    object-fit: fill;
-  
+    padding: 5%;
     
 }
 
-.precio-compra{
-    
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    font-family: "manjari";
-    font-size: 30px;
-    align-items: center;
-}
-.texto-caja h2{
-
-    font-size: 25px;
-    
-}
-.texto-caja p{
-  margin-top: 10px;
-
-}
-.espacios{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: end;
-    
-}
-.espacios img{
-    width: 29%;
-    
-}
-.espacios h4{
-    
-    font-family: "manjari";
-    font-weight: 550;
-    font-size: 30px;
-    color: #6F2E14;
-}
