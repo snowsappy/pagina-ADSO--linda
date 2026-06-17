@@ -310,6 +310,7 @@ h1 {
     font-style: normal;
 }
 
+/*cada productos*/
 .productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -324,7 +325,7 @@ h1 {
     padding: 50px;
 }
 
-/*cada productos*/
+
 
 
 
