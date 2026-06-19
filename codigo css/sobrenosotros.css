@@ -8,256 +8,248 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #F0ECEC;
-}
-
-/* ── Navbar ── */
 .navBar {
+
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px clamp(15px, 4vw, 50px);
+    padding: 10px 50px;
 }
 
 .menu ul {
     display: flex;
     list-style: none;
-    gap: clamp(20px, 5vw, 80px);
+    gap: 80px;
     padding: 0;
     margin: 0;
-    font-family: "Manjari", sans-serif;
-    font-size: clamp(14px, 2vw, 22px);
+    font-family: "manjari";
+    font-size: 22px;
 }
 
 .logo {
+
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+
 }
 
 .logo img {
-    width: clamp(70px, 10vw, 140px);
-    display: block;
+    margin-top: 10px;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+
 }
 
 .iconos {
     display: flex;
-    align-items: center;
-    gap: clamp(10px, 2vw, 25px);
+    justify-content: end;
+    gap: 25px;
 }
 
-.iconos a {
-    display: flex;
-    align-items: center;
-}
-
-.iconos a img,
 .iconos img {
-    width: clamp(24px, 3vw, 35px);
-    height: clamp(24px, 3vw, 35px);
-    object-fit: contain;
+    width: 15%;
 }
 
 .menu a {
     text-decoration: none;
-    color: #EA6872;
+    color: #f5f5f5;
+
+
 }
 
 header {
-    position: fixed;
+    position: absolute;
+
     width: 100%;
+
     z-index: 1000;
-    background-color: #F0ECEC;
 }
 
 .menu a:hover {
     color: #ffa5ad;
 }
-
 .hamburguesa {
     display: none;
 }
 
-/* ── Main ── */
-.main {
-    padding-top: 70px;
-    display: flex;
-    flex-direction: column;
-}
-
-/* ══════════════════
-   HERO
-   ══════════════════ */
 .hero-nosotros {
-    position: relative;
+   
     width: 100%;
+    height: 70%;
     height: clamp(700px, 30vw, 360px);
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
-
-.hero-bg {
-    position: absolute;
-    inset: 0;
+.hero-nosotros h1{
+    position:absolute;
+    z-index: 99;
+    font-family: "lilita one";
+    font-size: 10rem;
+    color: #f5f5f5;
+}
+.hero-ima{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.5);
 }
-
-.hero-nosotros h1 {
-    position: relative;
-    font-family: "Lilita One", cursive;
-    color: #fff;
-    font-size: clamp(8rem, 6vw, 4rem);
-    z-index: 1;
-    text-align: center;
+.hero-ima img{
+ object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-
-.hero-icons {
-    position: absolute;
-    bottom: 16px;
-    right: 20px;
+.redes {
     display: flex;
-    gap: 12px;
-    z-index: 1;
+    justify-content: center;
+    position: absolute;
+    top: 65.5%;
+    right: 2%;
+    z-index: 70;
 }
 
-.hero-icons i {
-    font-size: 20px;
-    color: #fff;
+.redes li {
+    list-style: none;
 }
 
-/* ══════════════════
-   HISTORIA
-   ══════════════════ */
+.redes ul {
+    display: flex;
+    gap: 1.6vh;
+}
+
+.redes img {
+    min-width: 30px;
+    width: 5vh;
+    height: 5vh;
+
+}
+
+/*sobrenosotros */
 .historia-section {
     display: grid;
-    grid-template-columns: 1fr 1.6fr;
-    gap: 20px;
-    padding: clamp(24px, 4vw, 50px) clamp(20px, 6vw, 70px);
-    background: #F0ECEC;
+    grid-template-columns: 1fr 1.8fr;
+    gap: 50px;
+    padding: 13%;
+    padding-bottom: 2%;
+    padding-top: 6%;
+    height: 100%;
+    width: 100%;
 }
 
 .historia-izq {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 40px;
 }
 
 .img-pequena {
     width: 100%;
-    height: clamp(300px, 20vw, 220px);
+    height:35% ;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 30px;
     display: block;
+    margin-top:3.1% ;
 }
 
-.historia-card-texto {
+.textocuadro {
     background: #E1F3D4;
-    border-radius: 10px;
-    padding: 18px;
-}
-
-.historia-card-texto h3 {
-    font-family: "Lilita One", cursive;
-    font-size: clamp(1rem, 1.8vw, 1.2rem);
-    color: #2A481F;
-    margin-bottom: 10px;
-}
-
-.historia-card-texto p {
-    font-family: "Manjari", sans-serif;
-    font-size: clamp(12px, 1.3vw, 14px);
-    color: #2A481F;
-    line-height: 1.6;
-}
-
-.historia-der {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.historia-der h2 {
-    font-family: "Lilita One", cursive;
-    font-size: clamp(3rem, 3vw, 2.2rem);
-    color: #13270C;
-}
-
-.img-grande-wrap {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.img-grande-wrap img {
+    border-radius: 30px;
+    padding: 12%;
     width: 100%;
-    height: clamp(180px, 26vw, 340px);
-    object-fit: cover;
-    display: block;
-    object-position: center 100%;
-}
-
-.adso-badge {
-    position: absolute;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: "Lilita One", cursive;
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    color: #FFA163;
-    letter-spacing: 6px;
-}
-
-/* ── Timeline debajo de imagen grande ── */
-.timeline-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-}
-
-.tl-btn {
-    background: #305321;
-    color: #fff;
-    font-family: "Manjari", sans-serif;
-    font-weight: 700;
-    font-size: clamp(13px, 1.5vw, 16px);
-    padding: 10px 20px 6px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.tl-btn.act {
-    background: #96BA7F;
-}
-
-.tl-btn:hover {
-    background: #4a8f4e;
-}
-
-.tl-line {
-    height: 3px;
-    width: clamp(16px, 3vw, 40px);
-    background: #73B577;
-}
-
-/* ══════════════════
-   EQUIPO
-   ══════════════════ */
-.equipo-section {
-    padding: clamp(20px, 4vw, 40px) clamp(20px, 6vw, 70px);
+    height: 51%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+.textocuadro h3 {
+    font-family: "manjari";
+    font-size: 4vh;
+    color: #2A481F;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.textocuadro p {
+    font-family: "Manjari", sans-serif;
+    font-size: 2.4vh;
+    color: #2A481F;
+    line-height: 1.6;
+    text-justify: distribute-all-lines;
+}
+
+.historia-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.historia-derecha h2 {
+    font-family: "Lilita One";
+    font-size: 9vh;
+    color: #13270C;
+    display: flex;
+    justify-content: center;
+}
+
+.img-grande {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.img-grande img {
+    width: 100%;
+    height: 90%;
+    border-radius: 30px;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+.botones-tiempo{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 10vh 20px 10vh;
+}
+.btntiempo{
+    position: relative;
+    bottom: 80%;
+    border-radius: 30px;
+    width: 94%;
+    height: 70px;
+    border-radius: 15px;
+    color: #F5f5f5;
+    background-color: #2A481F;
+    font-family: "lilita one";
+    font-size: 3.3vh;
+}
+
+/* ── Timeline debajo de imagen grande ── */
+
+#equipo{
+    text-align: center;
+    margin: 0% 20% 4% 20% ;
+    font-family: "manjari";
+    color: #605656;
+    font-size: 4vh;
+
+}
+.equipoA{
+    display: flex;
+    gap: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    margin-bottom: 10%;
+}
 .equipo-section h2 {
     font-family: "Manjari", sans-serif;
     font-size: clamp(2rem, 2vw, 1.4rem);
@@ -266,65 +258,54 @@ header {
     font-weight: 400;
 }
 
-.equipo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    gap: 16px;
-}
 
-.eq-card {
+.carta {
     background: #E1F3D4;
-    border-radius: 12px;
-    padding: clamp(14px, 2vw, 22px);
-    display: flex;
+    border-radius: 25px;
+    padding: 5vh;
+    ;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 6px;
-    position: relative;       
-    overflow: hidden;          
+
+    position: relative;                
     cursor: pointer;
 }
 
-.eq-texto {
+.texto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
-    transition: opacity 0.3s ease;
+    gap: 2.8vh;
+    
 }
 
-.eq-card h4 {
+.carta h4 {
     font-family: "Manjari", sans-serif;
     font-size: clamp(30px, 1.6vw, 19px);
     font-weight: 700;
     color: #19260D;
+    font-size: 4.5vh;
 }
 
-.eq-card p {
+.carta p {
     font-family: "Manjari", sans-serif;
-    font-size: clamp(12px, 1.2vw, 14px);
+    font-weight: 300;
+    font-size: 3vh;
     color: #19260D;
-    line-height: 1.4;
+    text-align: center;
+    
 }
-
-.eq-redes {
+.ti {
+    width: 40%;
+}
+.redes {
     display: flex;
     gap: 10px;
     margin-top: 6px;
 }
 
-.eq-redes i {
-    font-size: 18px;
-    color: #605656;
-    cursor: pointer;
-}
 
-.eq-redes i:hover {
-    color: #EA6872;
-}
-
+/*hover y no me sirve */
 .eq-hover-img {
     position: absolute;
     inset: 0;
@@ -336,63 +317,55 @@ header {
     transition: opacity 0.3s ease;
 }
 
-.eq-card:hover .eq-texto {
-    opacity: 0;
-    background-color: transparent;
-}
 
-.eq-card:hover .eq-hover-img {
-    opacity: 1;
-}
-
-/* ══════════════════
-   MAPA
-   ══════════════════ */
-.mapa-section {
+.mapa {
     position: relative;
     width: 100%;
-    height: clamp(280px, 40vw, 820px);
+    height:100vh;
     overflow: hidden;
 }
 
-.mapa-img-full {
+.mapa-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
-.mapa-overlay {
+.mapa-cuadro {
     position: absolute;
     inset: 0;
     display: flex;
     align-items: flex-start;
     padding: 20px;
+    left: 2%;
+    top: 3%;
 }
 
-.mapa-info-box {
+.mapa-info {
     background: #305321;
     border-radius: 10px;
-    padding: 16px 18px;
+    padding: 2vh 2vh;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    min-width: 190px;
+    gap: 10px;
+    min-width: 300px;
+    height: 200px;
 }
 
-.mapa-info-box h3 {
+.mapa-info h3 {
     font-family: "Lilita One", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     color: #fff;
     letter-spacing: 1px;
 }
 
-.mapa-info-box p {
-    font-family: "Manjari", sans-serif;
-    font-size: 14px;
+.mapa-info p {
+    font-family: "Manjari";
+    font-size: 20px;
     color: #F5F5F5;
-    line-height: 1.8;
+    line-height: 1.4;
     font-weight: 300;
 }
 
@@ -402,7 +375,7 @@ header {
     border: none;
     padding: 6px 16px 4px;
     border-radius: 20px;
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
@@ -414,9 +387,8 @@ header {
     background: #4a8f4e;
 }
 
-/* ══════════════════
-   FOOTER
-   ══════════════════ */
+
+
 .pie {
     display: flex;
     justify-content: space-between;
@@ -424,16 +396,18 @@ header {
     background-color: #605656;
     padding: 2%;
     align-items: center;
-    position: relative;
+
 }
 
 .pie ul {
     list-style: none;
     display: flex;
     gap: 20px;
+
 }
 
 .logo-footer {
+
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -444,13 +418,17 @@ header {
 }
 
 .image-footer img {
+
     width: 40px;
     height: 40px;
+
 }
 
 .lado-izquierdo {
+
     display: flex;
     align-items: center;
+
     gap: 16px;
 }
 
@@ -458,18 +436,19 @@ header {
     width: 60px;
 }
 
+
+
 .lado-izquierdo p {
     text-decoration: underline;
     padding-top: 15px;
-    font-family: "Manjari", sans-serif;
+    font-family: "manjari";
     color: #f5f5f5;
     font-size: 25px;
     font-weight: 400;
 }
 
-/* ══════════════════════════
-   TABLET — 768px
-   ══════════════════════════ */
+/*
+   
 @media (max-width: 768px) {
 
     .menu nav {
@@ -533,9 +512,7 @@ header {
     }
 }
 
-/* ══════════════════════════
-   MÓVIL — 425px
-   ══════════════════════════ */
+/*
 @media (max-width: 425px) {
 
     .menu nav {
@@ -627,3 +604,4 @@ header {
         height: 26px;
     }
 }
+    */

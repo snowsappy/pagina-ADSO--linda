@@ -925,7 +925,7 @@ input {
         font-family: "manjari";
         font-size: 4vh;
     }
-}
+
 
 .pedidos {
     background-color: #fff9f6;
@@ -1153,7 +1153,7 @@ input {
 .hamburguesa {
     display: none;
 }
-
+}
 /* ==================================
    MOBILE 425px
 ================================== */
