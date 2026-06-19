@@ -80,8 +80,8 @@ header {
     display: none;
 }
 
-/* ── Main ── */
-.main {
+
+.todopedido{
     padding-top: 100px;
     padding-left: clamp(20px, 8vw, 160px);
     padding-right: clamp(20px, 8vw, 160px);
@@ -92,19 +92,19 @@ header {
     gap: 20px;
 }
 
-/* ── Título ── */
-.pedidos-title {
+
+.pedidos-titulo {
     text-align: center;
 }
 
-.pedidos-title h2 {
+.pedidos-titulo h2 {
     font-family: "Manrope", sans-serif;
     font-size: clamp(4rem, 4vw, 3rem);
     font-weight: 00;
     color: #605656;
 }
 
-.pedidos-title h4 {
+.pedidos-titulo h4 {
     font-family: "Manjari", sans-serif;
     font-size: clamp(0.9rem, 1.5vw, 0.5rem);
     color: #605656;
@@ -112,7 +112,7 @@ header {
     margin-top: 4px;
 }
 
-/* ── Tabs ── */
+
 .pedidos-tabs {
     display: flex;
     gap: 6px;
@@ -140,8 +140,8 @@ header {
     color: #605656;
 }
 
-/* ── Tracker ── */
-.pedido-tracker {
+
+.pedido-cuadro {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,6 +152,7 @@ header {
     padding: 24px 40px;
     width: 100%;
     gap: 10px;
+    
 }
 
 .tracker-step {
@@ -195,13 +196,14 @@ header {
     border-radius: 10px;
 }
 
-/* ── Tarjeta de pedido ── */
+
 .pedido-card {
     background: #fff;
     border-radius: 14px;
     width: 100%;
     overflow: hidden;
     border: 1px solid #818181;
+    
 }
 
 .pedido-card-header {
@@ -245,26 +247,25 @@ header {
     font-weight: 700;
 }
 
-/* ── Body del pedido ── */
-.pedido-card-body {
+
+.pedido-contenido {
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 16px 20px;
     border-bottom: 1px solid #818181;
+    
 }
 
-.pedido-card-body img {
-    width: clamp(60px, 8vw, 80px);
-    height: clamp(60px, 8vw, 80px);
+.pedido-contenido img {
+    width: clamp(60px, 8vw, 9%);
+    height: clamp(60px, 8vw, 9%);
     object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0;
 }
 
-.pedido-info {
-    flex: 1;
-}
+
 
 .pedido-nombre {
     font-family: "Manjari", sans-serif;
@@ -302,7 +303,6 @@ header {
     color: #605656;
 }
 
-/* ── Footer del pedido ── */
 .pedido-card-footer {
     display: flex;
     justify-content: space-between;
@@ -339,9 +339,7 @@ header {
     background: #d9555f;
 }
 
-/* ══════════════════════════
-   FOOTER
-   ══════════════════════════ */
+
 .pie {
     display: flex;
     justify-content: space-between;
@@ -349,7 +347,9 @@ header {
     background-color: #605656;
     padding: 2%;
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: 91%;
+    
 }
 
 .pie ul {
@@ -392,9 +392,7 @@ header {
     font-weight: 400;
 }
 
-/* ══════════════════════════
-   TABLET — 768px
-   ══════════════════════════ */
+
 @media (max-width: 768px) {
 
     .menu nav {
@@ -410,7 +408,7 @@ header {
         padding: 4px 8px;
     }
 
-    .main {
+    .todopedido {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -422,7 +420,9 @@ header {
     .tracker-linea {
         width: clamp(20px, 5vw, 60px);
     }
-
+    .tracker-linea.punteada{
+        
+    }
     .pie {
         flex-direction: row;
         gap: 20px;
@@ -458,9 +458,7 @@ header {
     }
 }
 
-/* ══════════════════════════
-   MÓVIL — 425px
-   ══════════════════════════ */
+
 @media (max-width: 425px) {
 
     .menu nav {
@@ -476,7 +474,7 @@ header {
         padding: 4px 8px;
     }
 
-    .main {
+    .todopedido {
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -508,29 +506,30 @@ header {
         width: 100%;
         text-align: center;
     }
-
+    .tracker-linea.punteada, .tracker-linea{
+        display: none;
+    }
     .pie {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 16px;
-        padding: 6%;
+        padding: 6.2%;
     }
 
-    .logo-footer {
-        position: static;
-        transform: none;
-    }
+    
 
     .logo-footer img {
         width: 8vh;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20%;
     }
 
-    .pie ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+   
+    .pedido-cuadro{
+        gap: 20px;
     }
-
     .lado-izquierdo {
         flex-direction: column;
         align-items: center;
@@ -540,14 +539,16 @@ header {
     .lado-izquierdo p {
         font-size: 14px;
         padding-top: 0;
+        display: none;
     }
 
     .lado-izquierdo img {
-        width: 35px;
+        width: 25px;
     }
 
     .image-footer img {
-        width: 26px;
-        height: 26px;
+        width: 20px;
+        height: 20px;
+        
     }
 }

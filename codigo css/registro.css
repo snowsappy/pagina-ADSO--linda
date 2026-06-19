@@ -128,3 +128,163 @@ body{
     width: 38%;
     
 }
+
+
+@media (max-width: 768px) {
+
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .superclase{
+        flex-direction: column;
+        gap: 30px;
+        padding: 5%;
+    }
+
+    .registro{
+        width: 75%;
+        height: auto;
+        padding: 40px 0;
+        left: 0;
+    }
+
+    .registro h1{
+        font-size: 4.5vh;
+    }
+
+    .formulario li{
+        width: 100%;
+    }
+
+    .form{
+        width: 90%;
+    }
+
+    .n button{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .ima{
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ima img{
+        width: 55%;
+    }
+
+    #texto{
+        position: static;
+        text-align: center;
+    }
+
+    .switches{
+        position: static;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .superclase{
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .registro{
+        width: 95%;
+        height: auto;
+        padding: 25px 15px;
+        left: 0;
+        border-radius: 15px;
+    }
+
+    .registro h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .registro p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    .formulario li{
+        width: 100%;
+    }
+
+    .form input{
+        width: 100%;
+    }
+
+    .form label{
+        font-size: 16px;
+    }
+
+    .n{
+        width: 100%;
+    }
+
+    .n button{
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    #hola{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #texto{
+        position: static;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 15px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .switches{
+        position: static;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .switches button,
+    #registrarse{
+        font-size: 15px;
+    }
+
+    .ima{
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ima img{
+        width: 85%;
+        max-width: 220px;
+    }
+}

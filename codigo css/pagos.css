@@ -9,7 +9,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #F0ECEC 63%, #605555 29%);
+    background: linear-gradient(to right, #F0ECEC 70%, #605656 29%);
     min-height: 100vh;
 }
 
@@ -70,7 +70,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background: linear-gradient(to right, #F0ECEC 63%, #605555 29%);
+    background: linear-gradient(to right, #F0ECEC 70%, #605656 29%);
 }
 
 .menu a:hover {
@@ -210,7 +210,7 @@ header {
     color: #605656;
 }
 
-/* ── Columna derecha ── */
+
 .metodo-col {
     background: transparent;
     border-radius: 0;
@@ -348,14 +348,15 @@ header {
     padding: 2%;
     margin-top: 2%;
     align-items: center;
-
+     position: absolute;
+    bottom: 0%;
 }
 
 .pie ul {
     list-style: none;
     display: flex;
     gap: 20px;
-
+   
 }
 
 .logo-footer {
