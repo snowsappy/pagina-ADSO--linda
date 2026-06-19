@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&family=Manrope:wght@200..800&display=swap');
 
-*{
+* {
     border: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 .navBar {
- 
+
     position: relative;
     display: flex;
     align-items: center;
@@ -28,26 +28,29 @@
     font-size: 22px;
 }
 
-.logo{
-     
+.logo {
+
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
- 
+
 }
-.logo img{
-   width: 80%;
-  
-   display: flex;
-   justify-content: center;
-   
+
+.logo img {
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+
 }
+
 .iconos {
     display: flex;
     justify-content: end;
     gap: 25px;
 }
-.iconos img{
+
+.iconos img {
     width: 15%;
 }
 
@@ -57,9 +60,10 @@
 
 
 }
-header{
+
+header {
     position: fixed;
-    
+
     width: 100%;
 
     z-index: 1000;
@@ -68,21 +72,23 @@ header{
 .menu a:hover {
     color: #ffa5ad;
 }
+
 /*barra de modos */
-.cambio{
+.cambio {
     width: 100%;
     height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-      
-    top: 50px;        
+
+    top: 50px;
     width: 100%;
 
     z-index: 1000;
 }
-.button{
+
+.button {
     background-color: #FFAAA5;
     width: 63.3%;
     height: 60px;
@@ -93,27 +99,30 @@ header{
     justify-content: center;
     transition: 0.2s;
 }
-.button::before{
+
+.button::before {
     background-image: url(./images/Gift.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 55px;
     position: absolute;
     content: "";
-    
+
     background-color: #FF8D8D;
     width: 150px;
     height: 60px;
     border-radius: 100px;
-    
+
     transition: 0.2s;
 }
-input:checked+.button{
+
+input:checked+.button {
     background-color: #FFAAA5;
 }
-input:checked + .button::before{
+
+input:checked+.button::before {
     transform: translate(-1050px);
-    
+
     background-image: url(./images/usuario\ temporal.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -121,8 +130,11 @@ input:checked + .button::before{
     position: absolute;
 }
 
-input{display: none}
-.cambio span{
+input {
+    display: none
+}
+
+.cambio span {
     color: #f5f5f5;
     position: absolute;
     top: 10%;
@@ -130,46 +142,47 @@ input{display: none}
     font-size: 40px;
 }
 
-.button span{
+.button span {
     display: flex;
     align-items: center;
     position: relative;
     justify-content: center;
     font-family: "manrope";
-    
+
     top: auto;
 }
 
-.hero-regalo{
-    padding-top:3%;
+.hero-regalo {
+    padding-top: 3%;
     width: 100%;
     height: 100vh;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-   position: relative;
+    position: relative;
     background: #3D2C62;
-    
-    
+
+
 }
 
-.contenido-hero{
-     padding-top: 5%;
+.contenido-hero {
+    padding-top: 5%;
     padding-left: 10%;
     z-index: 1;
 }
 
-.contenido-hero h4{
+.contenido-hero h4 {
 
     font-family: "manrope";
     font-size: clamp(3vh);
     color: #E9A454;
-   
+
 }
-.contenido-hero h1{
+
+.contenido-hero h1 {
     font-family: "mada";
-    font-size:15vh ;
+    font-size: 15vh;
     letter-spacing: -8px;
     font-weight: 800;
     color: #f5f5f5;
@@ -177,25 +190,26 @@ input{display: none}
     margin-bottom: 30px;
 }
 
-.contenido-hero p{
+.contenido-hero p {
     font-family: "manjari";
     font-size: 2.3vh;
     color: #f5f5f5;
     font-weight: 200;
-    
+
 
 }
 
-.hero-imagen img{
-    
+.hero-imagen img {
+
     position: relative;
     width: 100%;
     padding-right: 10%;
     right: 10%;
     top: 50px;
-    
+
 }
-.hero-regalo::before{
+
+.hero-regalo::before {
     content: "";
     background-image: url(../images/fondoregalos.png);
     background-repeat: no-repeat;
@@ -208,34 +222,39 @@ input{display: none}
     right: 0%;
     top: 0%;
 }
-.angel{
+
+.angel {
     margin-top: 30px;
     display: flex;
     gap: 20px;
 }
-.angel button{
-    
+
+.angel button {
+
     background: none;
     padding: 10px 40px 10px 40px;
     border: solid 1px;
     border-radius: 200px;
     color: #D3C5F6;
 }
-.angel p{
+
+.angel p {
     position: relative;
-    top:0.2vh;
+    top: 0.2vh;
     font-size: 22px;
     font-weight: 500;
     color: #D3C5F6
 }
-.filtros ul{
+
+.filtros ul {
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 5%;
     padding: 0px;
 }
-.filtros li{
+
+.filtros li {
     display: flex;
     border: 1px solid;
     width: 12%;
@@ -244,20 +263,21 @@ input{display: none}
     align-items: center;
     border-radius: 200px;
     font-family: "manjari";
-    font-size: clamp(30px,15px,10px);
+    font-size: clamp(30px, 15px, 10px);
     padding: 0px;
     padding-top: 0.5%;
     color: #96BA7F;
 }
 
-.filtros{
-   margin-top: 2.5%; 
-   margin-left: 5.2%;
-   margin-right: 5.2%;
-   padding: 0px;
+.filtros {
+    margin-top: 2.5%;
+    margin-left: 5.2%;
+    margin-right: 5.2%;
+    padding: 0px;
 }
-#ordenar{
-     background: none;
+
+#ordenar {
+    background: none;
     padding: 10px 30px 10px 30px;
     border: solid 1px;
     border-radius: 200px;
@@ -267,21 +287,24 @@ input{display: none}
     gap: 15px;
     align-items: center;
     justify-content: center;
-    
+
 }
-#ordenar p{
+
+#ordenar p {
     position: relative;
     top: 0.3vh;
     font-size: 22px;
     font-weight: 600;
     color: #3D2C62;
 }
-#ordenar img{
+
+#ordenar img {
     width: 2vh;
     height: 2vh;
-    
+
 }
-.redes{
+
+.redes {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -289,33 +312,38 @@ input{display: none}
     right: 2%;
     z-index: 70;
 }
-.redes li{
+
+.redes li {
     list-style: none;
 }
-.redes ul{
+
+.redes ul {
     display: flex;
     gap: 1.6vh;
 }
-.redes img{
+
+.redes img {
     min-width: 30px;
     width: 5vh;
     height: 5vh;
-    
+
 }
+
 /*bordes */
 /*barra de modos */
-.cambio{
+.cambio {
     width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-      
-    top: 50px;        
+
+    top: 50px;
     z-index: 1000;
 }
-.button{
+
+.button {
     background-color: #FFAAA5;
     width: 63.3%;
     height: 50px;
@@ -326,6 +354,7 @@ input{display: none}
     justify-content: flex-end;
     transition: 0.2s;
 }
+
 /*cada productos*/
 .productos {
     display: grid;
@@ -439,7 +468,7 @@ input{display: none}
 }
 
 /* canasta de regalo */
-#titulo{
+#titulo {
     display: flex;
     justify-content: center;
     font-family: "manrope";
@@ -449,12 +478,13 @@ input{display: none}
     color: #605656;
 }
 
-.canastita article{
+.canastita article {
     display: flex;
     justify-content: center;
-    
+
 }
-.canastita li{
+
+.canastita li {
     display: flex;
     width: 550px;
     height: 65px;
@@ -470,32 +500,38 @@ input{display: none}
     font-weight: bold;
     color: #572610;
 }
-.canastita li p{
+
+.canastita li p {
     margin-top: 1vh;
 }
-.ayuda{
+
+.ayuda {
     display: flex;
     gap: 20px;
     font-size: 3vh;
     align-items: center;
 }
-.ayuda p{
+
+.ayuda p {
     position: relative;
     margin-top: 1vh;
 }
-.ayuda img{
+
+.ayuda img {
     width: 1.5vh;
     height: 1.5vh;
 }
-.imageregalo{
+
+.imageregalo {
     width: 90vh;
 }
-.imageregalo img{
+
+.imageregalo img {
 
     width: 100%;
 }
 
-.botoncito{
+.botoncito {
     position: relative;
     top: 21vh;
     left: 40PX;
@@ -508,14 +544,16 @@ input{display: none}
     font-size: 4vh;
 }
 
-.regalosagre ul{
+.regalosagre ul {
 
     display: flex;
     flex-direction: column;
-    
+
     gap: 20px;
-} .parrafos{
-     
+}
+
+.parrafos {
+
     display: flex;
     justify-content: space-between;
     font-family: "manjari";
@@ -629,6 +667,7 @@ input{display: none}
     font-size: 15px;
     color: #605656;
 }
+
 /*pie de pagina*/
 .pie {
     display: flex;
@@ -692,7 +731,7 @@ input{display: none}
 
 @media (max-width:768px) {
 
-     .menu nav {
+    .menu nav {
         display: none;
     }
 
@@ -730,86 +769,102 @@ input{display: none}
         padding: 0px 0px 0px 60px;
         gap: 120px;
     }
-    .contenido-hero h1{
+
+    .hamburguesa {
+        display: block;
+        font-size: 35px;
+    }
+
+    .contenido-hero h1 {
         font-size: 9vh;
     }
-    .contenido-hero p{
+
+    .contenido-hero p {
         font-size: 1.4vh;
         bottom: 20%;
         position: relative;
     }
-    .hero-imagen{
+
+    .hero-imagen {
         width: 85%;
         margin-left: 20px;
         margin-right: 20px;
     }
-    .hero-imagen img{
-    
-    position: relative;
-    width: 110%;
-    
-    padding-right: 10%;
-    right: 0%;
-    top: 50px;
+
+    .hero-imagen img {
+
+        position: relative;
+        width: 110%;
+
+        padding-right: 10%;
+        right: 0%;
+        top: 50px;
 
 
     }
-    
-    .contenido-hero{
+
+    .contenido-hero {
         padding: 10px;
         margin-left: 20px;
         position: relative;
-        top:4%
+        top: 4%
     }
-    
-    #ordenar p{
+
+    #ordenar p {
         font-size: 1rem;
     }
-    .redes{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 92%;
-    right: 2%;
-    z-index: 70;
-}
 
-    .redes img{
+    .redes {
+        display: flex;
+        justify-content: center;
         position: absolute;
-        
+        top: 92%;
+        right: 2%;
+        z-index: 70;
+    }
+
+    .redes img {
+        position: absolute;
+
         top: 90%;
         right: 0%;
-        
+
     }
-    .redes li{
+
+    .redes li {
         display: flex;
         gap: 30px;
     }
-    .hero-regalo::before{
-    
-    width: 60%;
+
+    .hero-regalo::before {
+
+        width: 60%;
     }
+
     .filtros {
         padding: 50px 45px 0px 45px;
     }
-    .button::before{
-    background-image: url(./images/Gift.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 55px;
-    position: absolute;
-    content: "";
-    
-    background-color: #FF8D8D;
-    width: 150px;
-    height: 50px;
-    border-radius: 100px;
-    
-    transition: 0.2s;
-}
-    .button span{
+
+    .button::before {
+        background-image: url(./images/Gift.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 55px;
+        position: absolute;
+        content: "";
+
+        background-color: #FF8D8D;
+        width: 150px;
+        height: 50px;
+        border-radius: 100px;
+
+        transition: 0.2s;
+    }
+
+    .button span {
         font-size: 2rem;
     }
+
     .productos {
         display: grid;
         grid-template-columns: 1fr;
@@ -832,255 +887,272 @@ input{display: none}
         padding: 5%;
     }
 
-.ayuda{
-    display: flex;
-    gap: 20px;
-    font-size: 3vh;
-    align-items: center;
-}
-.ayuda p{
-    position: relative;
-    margin-top: 1vh;
-}
-.ayuda img{
-    width: 1.5vh;
-    height: 1.5vh;
-}
-.imageregalo{
-    width: 90vh;
-}
-.imageregalo img{
+    .ayuda {
+        display: flex;
+        gap: 20px;
+        font-size: 3vh;
+        align-items: center;
+    }
 
+    .ayuda p {
+        position: relative;
+        margin-top: 1vh;
+    }
+
+    .ayuda img {
+        width: 1.5vh;
+        height: 1.5vh;
+    }
+
+    .imageregalo {
+        width: 90vh;
+    }
+
+    .imageregalo img {
+
+        width: 100%;
+    }
+
+    .botoncito {
+        position: relative;
+        top: 21vh;
+        left: 40PX;
+        width: 94%;
+        height: 65px;
+        border-radius: 15px;
+        color: #F5f5f5;
+        background-color: #FF8751;
+        font-family: "manjari";
+        font-size: 4vh;
+    }
+}
+
+.pedidos {
+    background-color: #fff9f6;
+    height: 50vh;
+    /*el widht no sirve*/
+    border-radius: 20px;
+    justify-items: end;
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-image {
+    width: 180px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 15px;
+    clip-path: polygon(100% 0, 100% 67%, 76% 100%, 0 100%, 0 0);
+    position: relative;
+}
+
+.boton-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.boton {
+    left: 86.6%;
+    top: 827.8%;
+    padding: 5px;
+}
+
+.boton1 {
+    left: 23.6%;
+    top: 827.8%;
+    padding: 5px;
+}
+
+.boton2 {
+    left: 55.6%;
+    top: 827.8%;
+    padding: 4px;
+}
+
+.boton img {
+    width: 18%;
+}
+
+.boton1 img {
+    width: 18%;
+}
+
+.boton2 img {
+    width: 18%;
+}
+
+.pedidos h4 {
+    font-family: "manrope";
+    font-weight: 600;
+    font-size: 20px;
+    color: #96BA7F;
+}
+
+.pedidos p {
+    font-family: "manjari";
+    font-size: 15px;
+    color: #605656;
+}
+
+
+
+.filtros ul {
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.filtros li {
+    width: 180px;
+    font-size: 18px;
+}
+
+/* PRODUCTOS */
+.productos {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    gap: 25px;
+}
+
+.caja article {
+    height: auto;
+}
+
+.image {
+    width: 100%;
+    height: 280px;
+}
+
+.texto-caja h2 {
+    font-size: 20px;
+}
+
+.precio-compra {
+    font-size: 22px;
+}
+
+.compra {
+    width: 120px;
+    height: 50px;
+}
+
+.canastita {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.canastita article {
+    flex-direction: row;
+    gap: 0px;
+}
+
+.imageregalo {
     width: 100%;
 }
 
-.botoncito{
-    position: relative;
-    top: 21vh;
-    left: 40PX;
-    width: 94%;
-    height: 65px;
-    border-radius: 15px;
-    color: #F5f5f5;
-    background-color: #FF8751;
-    font-family: "manjari";
-    font-size: 4vh;
-}
+.canastita ul {
+    padding-left: 5%;
 }
 
-    .pedidos {
-        background-color: #fff9f6;
-        height: 50vh;
-        /*el widht no sirve*/
-        border-radius: 20px;
-        justify-items: end;
-        padding: 20px;
-        gap: 15px;
-        display: flex;
-        flex-direction: column;
-    }
+.canastita li {
+    width: 100%;
+    height: 80%;
+    font-size: 20px;
+    gap: 20px;
 
-    .boton-image {
-        width: 180px;
-        height: 160px;
-        overflow: hidden;
-        border-radius: 15px;
-        clip-path: polygon(100% 0, 100% 67%, 76% 100%, 0 100%, 0 0);
-        position: relative;
-    }
+    font-size: 10px;
+}
 
-    .boton-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+.regalosagre p {
+    font-size: 20px;
+}
 
-    .boton {
-        left: 86.6%;
-        top: 827.8%;
-        padding: 5px;
-    }
+.parrafos {
+    font-size: 10px;
+    top: 40px;
+}
 
-    .boton1 {
-        left: 23.6%;
-        top: 827.8%;
-        padding: 5px;
-    }
+.botoncito {
+    width: 95%;
+    height: 38px;
+    top: 5vh;
+    font-size: 20px;
+    left: 5%;
+    border-radius: 10px;
+}
 
-    .boton2 {
-        left: 55.6%;
-        top: 827.8%;
-        padding: 4px;
-    }
+.imageregalo {
+    width: 100%;
+}
 
-    .boton img {
-        width: 18%;
-    }
+.imageregalo img {
+    width: 50vh;
+}
 
-    .boton1 img {
-        width: 18%;
-    }
+/* BOTONES PÁGINAS */
+.botones-pagina {
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
-    .boton2 img {
-        width: 18%;
-    }
+.pedidos {
+    width: 80%;
+    height: auto;
+}
 
-    .pedidos h4 {
-        font-family: "manrope";
-        font-weight: 600;
-        font-size: 20px;
-        color: #96BA7F;
-    }
+.boton-image {
+    width: 100%;
+    height: 300px;
+}
 
-    .pedidos p {
-        font-family: "manjari";
-        font-size: 15px;
-        color: #605656;
-    }
+.boton,
+.boton1,
+.boton2 {
 
-  
-  
-    .filtros ul{
-        flex-wrap: wrap;
-        gap: 18px;
-    }
+    top: 500%;
+}
 
-    .filtros li{
-        width: 180px;
-        font-size: 18px;
-    }
+/* FOOTER */
+.pie {
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+}
 
-    /* PRODUCTOS */
-    .productos{
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 5%;
-        margin-right: 5%;
-        padding: 20px;
-        gap: 25px;
-    }
-
-    .caja article{
-        height: auto;
-    }
-
-    .image{
-        width: 100%;
-        height: 280px;
-    }
-
-    .texto-caja h2{
-        font-size: 20px;
-    }
-
-    .precio-compra{
-        font-size: 22px;
-    }
-
-    .compra{
-        width: 120px;
-        height: 50px;
-    }
-
-    .canastita{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .canastita article{
-        flex-direction: row;
-        gap: 0px;
-    }
-
-    .imageregalo{
-        width: 100%;
-    }
-    .canastita ul{
-        padding-left: 5%;
-    }
-    .canastita li{
-        width: 100%;
-        height: 80%;
-        font-size: 20px;
-        gap: 20px;
-        
-        font-size: 10px;
-    }
-    .regalosagre p{
-        font-size: 20px;
-    }
-    
-    .parrafos{
-        font-size: 10px;
-        top:40px;
-    }
-
-    .botoncito{
-        width: 95%;
-        height: 38px;
-        top: 5vh;
-        font-size: 20px;
-        left: 5%;
-        border-radius: 10px;
-    }
-    .imageregalo{
-        width: 100%;
-    }
-    .imageregalo img{
-        width: 50vh;
-    }
-    /* BOTONES PÁGINAS */
-    .botones-pagina{
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    .pedidos{
-        width: 80%;
-        height: auto;
-    }
-
-    .boton-image{
-        width: 100%;
-        height: 300px;
-    }
-
-    .boton,
-    .boton1,
-    .boton2{
-        
-        top:500%;
-    }
-
-    /* FOOTER */
-    .pie{
-        flex-direction: row;
-        gap: 20px;
-        text-align: center;
-    }
-
-   .logo-footer img{
+.logo-footer img {
     width: 20%;
-   }
-    .lado-izquierdo{
-        flex-direction: row;
-    }
-    .lado-izquierdo img{
-        width: 13%;
-    }
-    
-    .lado-izquierdo p{
-        font-size: 15px;
-        align-self: start;
-    }
+}
 
-    .pie ul{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+.lado-izquierdo {
+    flex-direction: row;
+}
 
-    .image-footer img{
-        width: 90%
-    }
+.lado-izquierdo img {
+    width: 13%;
+}
+
+.lado-izquierdo p {
+    font-size: 15px;
+    align-self: start;
+}
+
+.pie ul {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-footer img {
+    width: 90%
+}
+
+.hamburguesa {
+    display: none;
+}
 
 /* ==================================
    MOBILE 425px
@@ -1088,194 +1160,195 @@ input{display: none}
 @media screen and (max-width: 425px) {
 
     /* HEADER */
-    .navBar{
+    .navBar {
         padding: 10px 15px;
     }
 
-    .menu ul{
+    .hamburguesa {
+        display: block;
+        font-size: 35px;
+    }
+
+    .menu ul {
         gap: 12px;
         font-size: 12px;
         flex-wrap: wrap;
     }
 
-    .logo{
+    .logo {
         position: static;
         transform: none;
     }
 
-    .logo img{
+    .logo img {
         width: 90px;
     }
 
-    .iconos{
+    .iconos {
         gap: 8px;
     }
 
-    .iconos img{
+    .iconos img {
         width: 22px;
     }
 
     /* SWITCH */
-    .cambio{
+    .cambio {
         top: 70px;
         height: auto;
         padding: 10px;
     }
 
-    .button{
+    .button {
         width: 95%;
         height: 50px;
     }
 
-    .button::before{
+    .button::before {
         width: 90px;
         height: 50px;
         background-size: 35px;
     }
 
-    .cambio span{
+    .cambio span {
         font-size: 18px;
         right: 38%;
     }
 
     /* HERO */
-    .hero-regalo{
+    .hero-regalo {
         flex-direction: row;
         text-align: center;
         padding: 140px 20px 40px;
         height: auto;
     }
 
-    .contenido-hero{
+    .contenido-hero {
         padding: 0;
     }
 
-    .contenido-hero h4{
+    .contenido-hero h4 {
         font-size: 18px;
     }
 
-    .contenido-hero h1{
+    .contenido-hero h1 {
         font-size: 42px;
         letter-spacing: -2px;
     }
 
-    .contenido-hero p{
+    .contenido-hero p {
         font-size: 15px;
         line-height: 1.5;
     }
 
-    .hero-imagen img{
-        width: 100%;
-        padding: 0;
-        right: 0;
-        top: 0;
-        margin-top: 25px;
-    }
-
-    .hero-regalo::before{
+    .hero-imagen img {
         display: none;
     }
 
-    .angel{
+    .hero-regalo::before {
+        display: none;
+    }
+
+    .angel {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    .angel button{
+    .angel button {
         width: 100%;
         max-width: 220px;
     }
 
     /* FILTROS */
-    .filtros{
+    .filtros {
         margin: 20px 10px;
     }
 
-    .filtros ul{
+    .filtros ul {
         flex-wrap: wrap;
         gap: 10px;
     }
 
-    .filtros li{
+    .filtros li {
         width: 140px;
         height: 40px;
         font-size: 14px;
     }
 
-    #ordenar{
+    #ordenar {
         padding: 8px 15px;
     }
 
-    #ordenar p{
+    #ordenar p {
         font-size: 14px;
     }
 
     /* PRODUCTOS */
-    .productos{
+    .productos {
         grid-template-columns: 1fr;
         margin: 0;
         padding: 40px;
         gap: 20px;
     }
 
-    .caja{
+    .caja {
         width: 100%;
     }
 
-    .caja article{
+    .caja article {
         height: auto;
     }
 
-    .image{
+    .image {
         width: 100%;
         height: 240px;
     }
 
-    .texto-caja h2{
+    .texto-caja h2 {
         font-size: 18px;
     }
 
-    .texto-caja p{
+    .texto-caja p {
         font-size: 14px;
     }
 
-    .precio-compra{
+    .precio-compra {
         font-size: 18px;
     }
 
-    .compra{
+    .compra {
         width: 110px;
         height: 45px;
         font-size: 14px;
     }
 
-    .espacios h4{
+    .espacios h4 {
         font-size: 22px;
     }
 
     /* TITULO */
-    #titulo{
+    #titulo {
         font-size: 30px;
         text-align: center;
     }
 
     /* CANASTA */
-    .canastita article{
+    .canastita article {
         flex-direction: column;
         padding: 0 15px;
         gap: 25px;
     }
 
-    .imageregalo img{
+    .imageregalo img {
         width: 100%;
     }
 
-    .regalosagre{
+    .regalosagre {
         width: 100%;
     }
 
-    .canastita li{
+    .canastita li {
         width: 100%;
         height: auto;
         min-height: 55px;
@@ -1283,21 +1356,22 @@ input{display: none}
         font-size: 16px;
         padding: 15px;
     }
-    .canastita ul{
-        flex-direction: row;
+
+    .canastita ul {
         padding: 20px;
     }
-    .ayuda{
+
+    .ayuda {
         gap: 10px;
         font-size: 16px;
     }
 
-    .parrafos{
+    .parrafos {
         top: 20px;
         font-size: 22px;
     }
 
-    .botoncito{
+    .botoncito {
         top: 30px;
         left: 0;
         width: 100%;
@@ -1306,86 +1380,86 @@ input{display: none}
     }
 
     /* BOTONES PAGINA */
-    .botones-pagina{
+    .botones-pagina {
         flex-direction: column;
         padding: 20px;
         margin: 0;
     }
 
-    .pedidos{
+    .pedidos {
         width: 100%;
         height: auto;
     }
 
-    .boton-image{
+    .boton-image {
         width: 100%;
         height: 220px;
     }
 
     .boton,
     .boton1,
-    .boton2{
+    .boton2 {
         display: none;
     }
 
-    .pedidos h4{
+    .pedidos h4 {
         font-size: 20px;
     }
 
-    .pedidos p{
+    .pedidos p {
         font-size: 14px;
     }
 
     /* REDES */
-    .redes{
+    .redes {
         position: static;
         margin-top: 20px;
         justify-content: center;
     }
 
-    .redes img{
+    .redes img {
         width: 35px;
         height: 35px;
     }
 
     /* FOOTER */
-    .pie{
+    .pie {
         flex-direction: row;
         gap: 20px;
         text-align: center;
         padding: 25px 15px;
     }
 
-    .logo-footer{
+    .logo-footer {
         position: static;
         transform: none;
     }
 
-    .logo-footer img{
+    .logo-footer img {
         width: 70px;
     }
 
-    .lado-izquierdo{
+    .lado-izquierdo {
         flex-direction: row;
         gap: 10px;
     }
 
-    .lado-izquierdo img{
+    .lado-izquierdo img {
         width: 45px;
     }
 
-    .lado-izquierdo p{
+    .lado-izquierdo p {
         font-size: 16px;
         padding-top: 0;
         display: none;
     }
 
-    .pie ul{
+    .pie ul {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .image-footer img{
+    .image-footer img {
         width: 30px;
         height: 30px;
     }

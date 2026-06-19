@@ -30,7 +30,7 @@
                         <li><a href="">
                                 <p>productos</p>
                             </a></li>
-                        <li><a href="">
+                        <li><a href="sobrenostros.html">
                                 <p>nosotros</p>
                             </a></li>
                         <li><a href="">
@@ -43,8 +43,8 @@
                 <img src="./images/lindaa.png" alt="logo">
             </div>
             <div class="iconos">
-                <img src="./images/carritocompra.png" alt="carrito">
-                <img src="./images/usuario temporal.png" alt="usuario">
+                <a href="carrito.html"><img src="./images/carritocompra.png" alt="carrito"></a>
+                <a href="perfil.html"><img src="./images/usuario temporal.png" alt="usuario"></a>
             </div>
         </div>
 
@@ -53,7 +53,6 @@
     <div class="cambio">
         <input type="checkbox" name="dulceria" id="check">
         <label for="check" class="button"><span>dulceria</span></label>
-
     </div>
     <div class="hero">
 
@@ -275,3 +274,13 @@
 </body>
 
 </html>
+
+<script>
+document.getElementById("check").addEventListener("change", function() {
+    if (this.checked) {
+        window.location.href = "index._regalos.html";
+    } else {
+        window.location.href = "indeex.html";
+    }
+});
+</script>

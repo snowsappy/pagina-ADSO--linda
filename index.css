@@ -53,8 +53,16 @@
     gap: 25px;
 }
 
+.iconos a {
+    display: flex;
+    align-items: center;
+}
+
+.iconos a img,
 .iconos img {
-    width: 15%;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
 .menu a {
@@ -704,7 +712,265 @@ h1 {
 }
 
 
-@media (max-width:768px) {
+@media ((min-width : 300px) and (max-width:425px)) {
+
+    .menu nav {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: block;
+        font-size: 35px;
+    }
+
+    .logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .menu ul {
+        gap: 30px;
+    }
+
+    header,
+    .navBar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navBar {
+        padding: 10px 20px;
+    }
+
+    .iconos {
+        width: 100px;
+        overflow: hidden;
+    }
+
+    .iconos img {
+        width: 30px !important;
+        max-width: 30px !important;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 70vh;
+        /* o 40vh, 60vh según quieras */
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero span {
+        font-size: 70px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .mini-images ul {
+        gap: 30px;
+    }
+
+    .mini-images img {
+        width: 150%;
+    }
+
+    .filtros {
+        padding: 50px 45px 0px 45px;
+    }
+
+    .filtros ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .productos {
+        grid-template-columns: 400px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .hero::after {
+        width: 60%;
+    }
+
+    .button {
+        width: 90%;
+    }
+
+    .video-promocional {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .video-image {
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+    }
+
+    .video-image video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenido-video {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contenido-video h2 {
+        font-size: 35px;
+        position: static;
+    }
+
+    .contenido-video p {
+        font-size: 16px;
+        position: static;
+    }
+
+    .contenido-video h4 {
+        font-size: 28px;
+    }
+
+    #vermas {
+        margin-left: 0%;
+    }
+
+    .ayuda {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .ayuda button {
+        width: 100%;
+    }
+
+    .image-promotional {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .image-promotional img {
+        width: 45%;
+    }
+
+    .contenido-video h2,
+    .contenido-video p,
+    .contenido-video button {
+        position: static;
+        bottom: auto;
+    }
+
+    .botones-pagina {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .boton-image {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 15px;
+        clip-path: polygon(100% 0, 100% 67%, 76% 100%, 0 100%, 0 0);
+        position: relative;
+    }
+
+    .boton-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .pedidos {
+        height: 40vh;
+    }
+
+    .boton {
+        top: 682.5%;
+        left: 67%;
+        padding: 4px;
+    }
+
+    .boton1 {
+        top: 726%;
+        left: 67%;
+        padding: 4px;
+    }
+
+    .boton2 {
+        top: 769%;
+        left: 67%;
+        padding: 4px;
+    }
+
+    .boton img {
+        padding: 4px;
+    }
+
+    .boton1 img {
+        padding: 4px;
+    }
+
+    .boton2 img {
+        padding: 4px;
+    }
+
+    .image-footer img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo-footer img {
+        margin-top: 10px;
+        width: 70px;
+    }
+
+    .lado-izquierdo {
+        gap: 7px;
+    }
+
+    .lado-izquierdo img {
+        width: 50px;
+    }
+
+    .lado-izquierdo p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media ((min-width:426px) and (max-width: 768px)) {
 
     .menu nav {
         display: none;
@@ -880,4 +1146,3 @@ h1 {
         color: #605656;
     }
 }
-

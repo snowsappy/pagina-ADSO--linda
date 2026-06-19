@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0ECEC;
+}
+
+/* ── Navbar ── */
+.navBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px clamp(15px, 4vw, 50px);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: clamp(20px, 5vw, 80px);
+    padding: 0;
+    margin: 0;
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(14px, 2vw, 22px);
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: clamp(70px, 10vw, 140px);
+    display: block;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 2vw, 25px);
+}
+
+.iconos a {
+    display: flex;
+    align-items: center;
+}
+
+.iconos a img,
+.iconos img {
+    width: clamp(24px, 3vw, 35px);
+    height: clamp(24px, 3vw, 35px);
+    object-fit: contain;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #EA6872;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: #F0ECEC;
+}
+
+.menu a:hover {
+    color: #ffa5ad;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+/* ── Main ── */
+.main {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ══════════════════
+   HERO
+   ══════════════════ */
+.hero-nosotros {
+    position: relative;
+    width: 100%;
+    height: clamp(700px, 30vw, 360px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.hero-nosotros h1 {
+    position: relative;
+    font-family: "Lilita One", cursive;
+    color: #fff;
+    font-size: clamp(8rem, 6vw, 4rem);
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-icons {
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    z-index: 1;
+}
+
+.hero-icons i {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* ══════════════════
+   HISTORIA
+   ══════════════════ */
+.historia-section {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 20px;
+    padding: clamp(24px, 4vw, 50px) clamp(20px, 6vw, 70px);
+    background: #F0ECEC;
+}
+
+.historia-izq {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.img-pequena {
+    width: 100%;
+    height: clamp(300px, 20vw, 220px);
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.historia-card-texto {
+    background: #E1F3D4;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.historia-card-texto h3 {
+    font-family: "Lilita One", cursive;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    color: #2A481F;
+    margin-bottom: 10px;
+}
+
+.historia-card-texto p {
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(12px, 1.3vw, 14px);
+    color: #2A481F;
+    line-height: 1.6;
+}
+
+.historia-der {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.historia-der h2 {
+    font-family: "Lilita One", cursive;
+    font-size: clamp(3rem, 3vw, 2.2rem);
+    color: #13270C;
+}
+
+.img-grande-wrap {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.img-grande-wrap img {
+    width: 100%;
+    height: clamp(180px, 26vw, 340px);
+    object-fit: cover;
+    display: block;
+    object-position: center 100%;
+}
+
+.adso-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Lilita One", cursive;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: #FFA163;
+    letter-spacing: 6px;
+}
+
+/* ── Timeline debajo de imagen grande ── */
+.timeline-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.tl-btn {
+    background: #305321;
+    color: #fff;
+    font-family: "Manjari", sans-serif;
+    font-weight: 700;
+    font-size: clamp(13px, 1.5vw, 16px);
+    padding: 10px 20px 6px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.tl-btn.act {
+    background: #96BA7F;
+}
+
+.tl-btn:hover {
+    background: #4a8f4e;
+}
+
+.tl-line {
+    height: 3px;
+    width: clamp(16px, 3vw, 40px);
+    background: #73B577;
+}
+
+/* ══════════════════
+   EQUIPO
+   ══════════════════ */
+.equipo-section {
+    padding: clamp(20px, 4vw, 40px) clamp(20px, 6vw, 70px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.equipo-section h2 {
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(2rem, 2vw, 1.4rem);
+    color: #605656;
+    text-align: center;
+    font-weight: 400;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 16px;
+}
+
+.eq-card {
+    background: #E1F3D4;
+    border-radius: 12px;
+    padding: clamp(14px, 2vw, 22px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;       
+    overflow: hidden;          
+    cursor: pointer;
+}
+
+.eq-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    transition: opacity 0.3s ease;
+}
+
+.eq-card h4 {
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(30px, 1.6vw, 19px);
+    font-weight: 700;
+    color: #19260D;
+}
+
+.eq-card p {
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(12px, 1.2vw, 14px);
+    color: #19260D;
+    line-height: 1.4;
+}
+
+.eq-redes {
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.eq-redes i {
+    font-size: 18px;
+    color: #605656;
+    cursor: pointer;
+}
+
+.eq-redes i:hover {
+    color: #EA6872;
+}
+
+.eq-hover-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.eq-card:hover .eq-texto {
+    opacity: 0;
+    background-color: transparent;
+}
+
+.eq-card:hover .eq-hover-img {
+    opacity: 1;
+}
+
+/* ══════════════════
+   MAPA
+   ══════════════════ */
+.mapa-section {
+    position: relative;
+    width: 100%;
+    height: clamp(280px, 40vw, 820px);
+    overflow: hidden;
+}
+
+.mapa-img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mapa-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.mapa-info-box {
+    background: #305321;
+    border-radius: 10px;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 190px;
+}
+
+.mapa-info-box h3 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.mapa-info-box p {
+    font-family: "Manjari", sans-serif;
+    font-size: 14px;
+    color: #F5F5F5;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.btn-llegar {
+    background: #73B577;
+    color: #fff;
+    border: none;
+    padding: 6px 16px 4px;
+    border-radius: 20px;
+    font-family: "Manjari", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 4px;
+}
+
+.btn-llegar:hover {
+    background: #4a8f4e;
+}
+
+/* ══════════════════
+   FOOTER
+   ══════════════════ */
+.pie {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #605656;
+    padding: 2%;
+    align-items: center;
+    position: relative;
+}
+
+.pie ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.logo-footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-footer img {
+    width: 13vh;
+}
+
+.image-footer img {
+    width: 40px;
+    height: 40px;
+}
+
+.lado-izquierdo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.lado-izquierdo img {
+    width: 60px;
+}
+
+.lado-izquierdo p {
+    text-decoration: underline;
+    padding-top: 15px;
+    font-family: "Manjari", sans-serif;
+    color: #f5f5f5;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* ══════════════════════════
+   TABLET — 768px
+   ══════════════════════════ */
+@media (max-width: 768px) {
+
+    .menu nav {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: #EA6872;
+        background: none;
+        padding: 4px 8px;
+    }
+
+    .historia-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .equipo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mapa-section {
+        height: 360px;
+    }
+
+    .pie {
+        flex-direction: row;
+        gap: 20px;
+        padding: 5%;
+    }
+
+    .logo-footer {
+        position: static;
+        transform: none;
+    }
+
+    .logo-footer img {
+        width: 10vh;
+    }
+
+    .pie ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .lado-izquierdo p {
+        font-size: 18px;
+    }
+
+    .lado-izquierdo img {
+        width: 45px;
+    }
+
+    .image-footer img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* ══════════════════════════
+   MÓVIL — 425px
+   ══════════════════════════ */
+@media (max-width: 425px) {
+
+    .menu nav {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #EA6872;
+        background: none;
+        padding: 4px 8px;
+    }
+
+    .hero-nosotros h1 {
+        font-size: clamp(5rem, 6vw, 4rem);
+    }
+
+    .historia-section {
+        padding: 16px 12px;
+    }
+
+    .equipo-section {
+        padding: 16px 12px;
+    }
+
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-row {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 8px 0;
+    }
+
+    .tl-line {
+        display: none;
+    }
+
+    .mapa-section {
+        height: 420px;
+    }
+
+    .mapa-overlay {
+        align-items: flex-start;
+    }
+
+    .pie {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 6%;
+    }
+
+    .logo-footer {
+        position: static;
+        transform: none;
+    }
+
+    .logo-footer img {
+        width: 8vh;
+    }
+
+    .pie ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .lado-izquierdo {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .lado-izquierdo p {
+        font-size: 14px;
+        padding-top: 0;
+    }
+
+    .lado-izquierdo img {
+        width: 35px;
+    }
+
+    .image-footer img {
+        width: 26px;
+        height: 26px;
+    }
+}

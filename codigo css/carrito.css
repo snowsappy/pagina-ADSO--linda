@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #F0ECEC;
+}
+
+/* ── Navbar ── */
+.navBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px clamp(15px, 4vw, 50px);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: clamp(20px, 5vw, 80px);
+    padding: 0;
+    margin: 0;
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(14px, 2vw, 22px);
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: clamp(70px, 10vw, 140px);
+    display: block;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 2vw, 25px);
+}
+
+.iconos a {
+    display: flex;
+    align-items: center;
+}
+
+.iconos a img,
+.iconos img {
+    width: clamp(24px, 3vw, 35px);
+    height: clamp(24px, 3vw, 35px);
+    object-fit: contain;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #EA6872;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: #F0ECEC;
+}
+
+.menu a:hover {
+    color: #ffa5ad;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+/* ── Main ── */
+.main {
+    padding-top: 100px;
+    padding-left: clamp(15px, 5vw, 80px);
+    padding-right: clamp(15px, 5vw, 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.title h2 {
+    font-family: "Manrope", sans-serif;
+    color: #CCCCCC;
+    font-size: clamp(2rem, 3vw, 4rem);
+    font-weight: 700;
+}
+
+.title h4 {
+    font-family: "Manjari", sans-serif;
+    color: #605656;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-top: 10px;
+}
+
+/* ══════════════════════════════
+   GRID DEL CARRITO — escritorio
+   Col 1: banner + productos
+   Col 2: resumen (ocupa 2 filas)
+   ══════════════════════════════ */
+.cart-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "banner  resumen"
+        "items   resumen";
+    gap: 14px 20px;
+    width: 100%;
+}
+
+/* ── Banner ── */
+.alert-banner {
+    grid-area: banner;
+    background: #73B577;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Manjari", sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: clamp(13px, 1.5vw, 15px);
+}
+
+.banner-check {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;          /* círculo como en el diseño */
+    border: 2px solid #fff;
+    background: transparent;
+    flex-shrink: 0;
+    position: relative;
+    cursor: default;
+}
+
+.banner-check::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 5px;
+    height: 9px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+}
+
+/* ── Lista de productos ── */
+.cart-items {
+    grid-area: items;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* ── Tarjeta de producto ── */
+.cart-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 14px 14px 40px;
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 8px 12px;
+    align-items: center;
+    position: relative;
+}
+
+.remove-btn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: #bbb;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+}
+
+.remove-btn:hover { color: #EA6872; }
+
+.item-img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    border: 1.5px solid #e8e0e0;
+    overflow: hidden;
+    position: relative;
+    background: #f5f0f0;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.stock-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FF8C00;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    padding: 3px 4px;
+    font-family: "Manjari", sans-serif;
+}
+
+.item-name {
+    grid-column: 2;
+    grid-row: 1;
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(19px, 1.4vw, 14px);
+    color: #605656;
+    font-weight: 700;
+    align-self: end;
+}
+
+.check-icon {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-icon i {
+    font-size: 22px;
+    color: #EA6872;
+}
+
+.item-bottom {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.qty-control {
+    display: inline-flex;
+    align-items: center;
+    border: 1.5px solid #ccc;
+    border-radius: 20px;
+}
+
+.qty-control button {
+    background: transparent;
+    padding: 4px 13px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    line-height: 1;
+}
+
+.qty-control span {
+    font-size: 14px;
+    padding: 0 4px;
+}
+
+.item-price { text-align: right; }
+
+.price-top {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: flex-end;
+}
+
+.old-price {
+    font-size: 12px;
+    color: #bbb;
+    text-decoration: line-through;
+    font-family: "Manjari", sans-serif;
+}
+
+.discount-badge {
+    background: #EA6872;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-family: "Manrope", sans-serif;
+}
+
+.new-price {
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(25px, 2vw, 18px);
+    font-weight: 700;
+    color: #605656;
+    font-weight: 500;
+}
+
+/* ── Resumen de compra ── */
+.cart-summary {
+    grid-area: resumen;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    align-self: start;
+}
+
+.cart-summary h3 {
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(1.9rem, 2vw, 1.25rem);
+    font-weight: 800;
+    color: #605656;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+}
+
+.coupon-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.coupon-row input {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 12px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #B2A3A3;
+    font-family: "Manjari", sans-serif;
+}
+
+.coupon-row button {
+    background: #EA6872;
+    color: #fff;
+    padding: 9px 35px 7px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Manjari", sans-serif;
+    white-space: nowrap;
+}
+
+.summary-lines {
+    border-top: 1.8px solid #C4C3C3;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #605656;
+    font-weight: bold;
+    padding: 8px 0;
+    font-family: "Manjari", sans-serif;
+}
+
+.summary-line span:last-child {
+    font-weight: 700;
+    color: #444;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(18px, 2vw, 20px);
+    font-weight: 700;
+    color: #605656;
+    margin: 14px 0 16px;
+    font-family: "Manjari", sans-serif;
+}
+
+.btn-checkout {
+    background: #EA6872;
+    color: #fff;
+    width: 100%;
+    padding: 14px 14px 10px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: "Manjari", sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.btn-checkout:hover { background: #d9555f; }
+
+/*pie de pagina*/
+.pie {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #605656;
+    padding: 2%;
+    margin-top: 2%;
+    align-items: center;
+
+}
+
+.pie ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.logo-footer {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-footer img {
+    width: 13vh;
+}
+
+.image-footer img {
+
+    width: 40px;
+    height: 40px;
+
+}
+
+.lado-izquierdo {
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.lado-izquierdo img {
+    width: 60px;
+}
+
+.lado-izquierdo p {
+    text-decoration: underline;
+    padding-top: 15px;
+    font-family: "manjari";
+    color: #f5f5f5;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* ══════════════════════════════
+   TABLET — 768px
+   Todo en una columna:
+   banner → productos → resumen
+   ══════════════════════════════ */
+/* ══════════════════════════════
+   TABLET — 768px
+   ══════════════════════════════ */
+@media (max-width: 768px) {
+
+    /* Cart grid */
+    .cart-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "banner"
+            "items"
+            "resumen";
+    }
+
+    .cart-summary {
+        width: 100%;
+    }
+
+    /* ── Header ── */
+    .menu nav {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: #EA6872;
+        background: none;
+        padding: 4px 8px;
+    }
+
+    /* ── Footer ── */
+    .pie {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 5%;
+        position: relative;
+    }
+
+    .logo-footer {
+        position: static;
+        transform: none;
+    }
+
+    .logo-footer img {
+        width: 10vh;
+    }
+
+    .pie ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .lado-izquierdo {
+        justify-content: center;
+    }
+
+    .lado-izquierdo p {
+        font-size: 18px;
+    }
+
+    .lado-izquierdo img {
+        width: 45px;
+    }
+
+    .image-footer img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* ══════════════════════════════
+   MÓVIL — 425px
+   ══════════════════════════════ */
+@media (max-width: 425px) {
+
+    /* Cart */
+    .main {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .cart-item {
+        grid-template-columns: 70px 1fr auto;
+        padding-left: 32px;
+    }
+
+    .item-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .qty-control button {
+        padding: 4px 10px;
+    }
+
+    .cart-summary {
+        padding: 14px;
+    }
+
+    .coupon-row {
+        flex-direction: column;
+    }
+
+    .coupon-row button {
+        width: 100%;
+    }
+
+    /* ── Header ── */
+    .menu nav {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #EA6872;
+        background: none;
+        padding: 4px 8px;
+    }
+
+    /* ── Footer ── */
+    .pie {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 6%;
+        position: relative;
+    }
+
+    .logo-footer {
+        position: static;
+        transform: none;
+    }
+
+    .logo-footer img {
+        width: 8vh;
+        margin-left: 30%;
+    }
+
+    .pie ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .lado-izquierdo {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-left: 13%;
+    }
+
+    .lado-izquierdo p {
+        font-size: 14px;
+        padding-top: 0;
+    }
+
+    .lado-izquierdo img {
+        width: 35px;
+    }
+
+    .image-footer img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* ══════════════════════════════
+   MÓVIL — 425px
+   Igual estructura pero compacto
+   ══════════════════════════════ */
+@media (max-width: 425px) {
+
+    /* Cart */
+    .main {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .cart-item {
+        grid-template-columns: 70px 1fr auto;
+        padding-left: 32px;
+    }
+
+    .item-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .qty-control button {
+        padding: 4px 10px;
+    }
+
+    .cart-summary {
+        padding: 14px;
+    }
+
+    .coupon-row {
+        flex-direction: column;
+    }
+
+    .coupon-row button {
+        width: 100%;
+    }
+
+    /* ── Header ── */
+    .menu nav {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #EA6872;
+        background: none;
+        padding: 4px 8px;
+    }
+
+    /* ── Footer ── */
+    .pie {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 6%;
+        position: relative;
+    }
+
+    .logo-footer {
+        position: static;
+        transform: none;
+    }
+
+    .logo-footer img {
+        width: 8vh;
+    }
+
+    .pie ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .lado-izquierdo {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .lado-izquierdo p {
+        font-size: 14px;
+        padding-top: 0;
+    }
+
+    .lado-izquierdo img {
+        width: 35px;
+    }
+
+    .image-footer img {
+        width: 26px;
+        height: 26px;
+    }
+}
