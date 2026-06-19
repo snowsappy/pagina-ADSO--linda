@@ -8,19 +8,14 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #fff;
-}
 
-/* ══════════════════════════
-   HEADER con fondo dividido
-   Verde izq | claro der
-   ══════════════════════════ */
+
+
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 1000;
-    background: linear-gradient(to right, #3C8162 18%, #F4F4F4 18%);
+    background: linear-gradient(to right, #3C8162 14.98%, #F4F4F4 10%);
 }
 
 .navBar {
@@ -70,10 +65,10 @@ header {
     object-fit: contain;
 }
 
-/* Links del nav sobre fondo verde en blanco */
+
 .menu a {
     text-decoration: none;
-    color: #fff;
+    color: #EA6872;
 }
 
 .menu a:hover {
@@ -84,40 +79,33 @@ header {
     display: none;
 }
 
-.main {
-    padding-top: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.perfil-grid {
+.perfil{
     display: grid;
     grid-template-columns: 285px 1fr;
     min-height: 100vh;
-    margin-top: 60px; /* altura exacta del header */
+    margin-top: 60px; 
     padding: 0%;
     margin: 0%;
 }
 
-.perfil-sidebar {
+.perfilbarra {
     background: #3C8162;
     padding: clamp(200px, 4vw, 50px) clamp(20px, 3vw, 36px);
     display: flex;
     flex-direction: column;
     gap: 28px;
-    /* que empiece desde arriba sin gap */
-    margin-top: 0;
+   
+  
 }
 
-.perfil-sidebar h2 {
-    font-family: "Lilita One", cursive;
-    font-size: clamp(2.5rem, 2.5vw, 2rem);
+.perfilbarra h2 {
+    font-family: "Lilita One";
+    font-size: clamp(2.5rem, 3.5vw, 3rem);
     color: #fff;
     font-weight: 400;
 }
 
-.sidebar-nav {
+.navegacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,8 +113,8 @@ header {
     gap: 6px;
 }
 
-.sidebar-link {
-    font-family: "Manjari", sans-serif;
+.link {
+    font-family: "Manjari";
     font-size: clamp(14px, 1.5vw, 17px);
     color: #fff;
     text-decoration: none;
@@ -135,106 +123,107 @@ header {
     transition: background 0.2s;
 }
 
-.sidebar-link:hover {
+.link:hover {
     background: rgba(255, 255, 255, 0.15);
 }
 
-.sidebar-link.active {
+.link.active {
     background: #fff;
     color: #73B577;
     font-weight: 700;
     border-radius: 8px;
 }
 
-/* ── Contenido derecho ── */
-.perfil-content {
+.perfil-contenido {
     background: #F4F4F4;
     margin-top: 3%;
-    padding: clamp(30px, 4vw, 50px) clamp(30px, 6vw, 80px);
+    padding: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: column;
     gap: 24px;
+
 }
 
 .perfil-titulo {
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope";
     font-size: clamp(2.6rem, 3vw, 2rem);
     font-weight: 700;
     color: #605656;
     text-align: center;
+    position: relative;
+    bottom: 6%;
 }
 
-/* ── Avatar y nombre ── */
-.perfil-header {
+
+.perfil-barranombre {
     background: #F5EDE9;
     border-radius: 14px;
     padding: 20px 24px;
     display: flex;
     align-items: center;
+
     gap: 20px;
 }
 
 .perfil-avatar {
-    width: clamp(70px, 10vw, 120px);
-    height: clamp(70px, 10vw, 120px);
+    width: 18%;
     border-radius: 50%;
     overflow: hidden;
-    flex-shrink: 0;
 }
 
 .perfil-avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
-.perfil-nombre-wrap h3 {
-    font-family: "Manjari", sans-serif;
-    font-size: clamp(1.7rem, 2vw, 1.3rem);
+.perfil-nombre h3 {
+    font-family: "Manjari";
+    font-size: clamp(1.7rem, 2vw, 3.3rem);
     font-weight: 700;
     color: #5B1C1C;
 }
 
-.perfil-nombre-wrap span {
-    font-family: "Manjari", sans-serif;
+.perfil-nombre span {
+    font-family: "Manjari";
     font-size: 16px;
     color: #5B1C1C;
     cursor: pointer;
 }
 
-.perfil-nombre-wrap span:hover {
+.perfil-nombre span:hover {
     color: #EA6872;
 }
 
-/* ── Formulario ── */
-.perfil-form {
+.perfil-formulario {
     border-radius: 14px;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.form-row-2 {
+.form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
 
-.form-group {
+.formulariolista {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-.form-group label {
+.formulariolista label {
     font-family: "Manjari", sans-serif;
     font-size: 15px;
     color: #605656;
     font-weight: 700;
 }
 
-.form-group input {
+.formulariolista input {
     padding: 18px 14px 14px;
     border: 1.5px solid #605656;
     border-radius: 8px;
@@ -246,32 +235,30 @@ header {
     width: 100%;
 }
 
-.form-group input:focus {
+.formulariolista input:focus {
     border-color: #73B577;
 }
 
-.btn-actualizar {
+.actualizar {
     background: #EA6872;
     color: #fff;
     border: none;
     width: 100%;
-    padding: 14px 14px 10px;
+    padding: 19px 14px 15px;
     border-radius: 10px;
-    font-family: "Manjari", sans-serif;
-    font-size: 17px;
+    font-family: "Manjari";
+    font-size: 2vh;
     font-weight: 700;
     cursor: pointer;
-    margin-top: 4px;
-    letter-spacing: 0.3px;
+    margin-top: 1vh;
+    
 }
 
-.btn-actualizar:hover {
-    background: #d9555f;
+.actualizar:hover {
+    background: #e7757e;
 }
 
-/* ══════════════════════════
-   FOOTER
-   ══════════════════════════ */
+
 .pie {
     display: flex;
     justify-content: space-between;
@@ -322,9 +309,6 @@ header {
     font-weight: 400;
 }
 
-/* ══════════════════════════
-   TABLET — 768px
-   ══════════════════════════ */
 @media (max-width: 768px) {
 
     header {
@@ -402,9 +386,7 @@ header {
     }
 }
 
-/* ══════════════════════════
-   MÓVIL — 425px
-   ══════════════════════════ */
+
 @media (max-width: 425px) {
 
     header {

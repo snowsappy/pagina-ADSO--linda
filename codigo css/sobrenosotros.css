@@ -136,7 +136,7 @@ header {
     grid-template-columns: 1fr 1.8fr;
     gap: 50px;
     padding: 13%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     padding-top: 6%;
     height: 100%;
     width: 100%;
@@ -232,7 +232,6 @@ header {
     font-size: 3.3vh;
 }
 
-/* ── Timeline debajo de imagen grande ── */
 
 #equipo{
     text-align: center;
@@ -240,7 +239,7 @@ header {
     font-family: "manjari";
     color: #605656;
     font-size: 4vh;
-
+  
 }
 .equipoA{
     display: flex;
@@ -248,7 +247,7 @@ header {
     margin-left: 10%;
     margin-right: 10%;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }
 .equipo-section h2 {
     font-family: "Manjari", sans-serif;
@@ -325,11 +324,16 @@ header {
     overflow: hidden;
 }
 
-.mapa-image {
+.mapaimage {
     width: 100%;
     height: 100%;
+
+}
+.mapaimage img{
+     width: 100%;
+    height: 100%;
     object-fit: contain;
-    display: block;
+    object-position: center;
 }
 
 .mapa-cuadro {
@@ -433,7 +437,7 @@ header {
 }
 
 .lado-izquierdo img {
-    width: 60px;
+    width: 50px;
 }
 
 
