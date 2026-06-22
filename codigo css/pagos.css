@@ -13,13 +13,13 @@ body {
     min-height: 100vh;
 }
 
-/* ── Navbar ── */
 .navBar {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px clamp(15px, 4vw, 50px);
+    top: 2vh;
 }
 
 .menu ul {
@@ -63,14 +63,14 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #EA6872;
+    color: #f5f5f5;
 }
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 1000;
-    background: linear-gradient(to right, #F0ECEC 70%, #605656 29%);
+   
 }
 
 .menu a:hover {
@@ -80,7 +80,6 @@ header {
 .hamburguesa {
     display: none;
 }
-
 /* ── Main ── */
 .main {
     padding-top: 100px;

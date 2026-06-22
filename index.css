@@ -13,43 +13,35 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px clamp(15px, 4vw, 50px);
+    top: 2vh;
 }
 
 .menu ul {
     display: flex;
     list-style: none;
-    gap: 80px;
+    gap: clamp(20px, 5vw, 80px);
     padding: 0;
     margin: 0;
-    font-family: "manjari";
-    font-size: 22px;
-}
-
-.hamburguesa {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(14px, 2vw, 22px);
 }
 
 .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
 .logo img {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-
+    width: clamp(70px, 10vw, 140px);
+    display: block;
 }
 
 .iconos {
     display: flex;
-    justify-content: end;
-    gap: 25px;
+    align-items: center;
+    gap: clamp(10px, 2vw, 25px);
 }
 
 .iconos a {
@@ -59,27 +51,31 @@
 
 .iconos a img,
 .iconos img {
-    width: 40px;
-    height: 40px;
+    width: clamp(24px, 3vw, 35px);
+    height: clamp(24px, 3vw, 35px);
     object-fit: contain;
 }
 
 .menu a {
     text-decoration: none;
-    color: #EA6872;
+    color: #ff8888;
 }
 
 header {
-    position: fixed;
-
+    position: absolute;
     width: 100%;
-
     z-index: 1000;
+   
 }
 
 .menu a:hover {
     color: #ffa5ad;
 }
+
+.hamburguesa {
+    display: none;
+}
+
 
 /*barra de modos */
 .cambio {
@@ -90,7 +86,7 @@ header {
     justify-content: center;
     position: absolute;
 
-    top: 50px;
+    top: 9vh;
     width: 100%;
 
     z-index: 1000;

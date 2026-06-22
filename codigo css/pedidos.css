@@ -8,17 +8,16 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #F0ECEC;
-}
 
-/* ── Navbar ── */
+
+
 .navBar {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px clamp(15px, 4vw, 50px);
+    top: 2vh;
 }
 
 .menu ul {
@@ -62,14 +61,14 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #EA6872;
+    color: #f5f5f5;
 }
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 1000;
-    background-color: #F0ECEC;
+   
 }
 
 .menu a:hover {
@@ -79,8 +78,6 @@ header {
 .hamburguesa {
     display: none;
 }
-
-
 .todopedido{
     padding-top: 100px;
     padding-left: clamp(20px, 8vw, 160px);
@@ -98,14 +95,14 @@ header {
 }
 
 .pedidos-titulo h2 {
-    font-family: "Manrope", sans-serif;
+    font-family: "Manjari";
     font-size: clamp(4rem, 4vw, 3rem);
     font-weight: 00;
     color: #605656;
 }
 
 .pedidos-titulo h4 {
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     font-size: clamp(0.9rem, 1.5vw, 0.5rem);
     color: #605656;
     font-weight: 400;
@@ -191,9 +188,11 @@ header {
 }
 
 .tracker-linea.punteada {
-    background: transparent;
-    border: 9px dashed #ccc;
-    border-radius: 10px;
+    background: none;
+    
+    border: none;
+    border-top: 8px dotted #ccc;
+   
 }
 
 
@@ -262,13 +261,13 @@ header {
     height: clamp(60px, 8vw, 9%);
     object-fit: cover;
     border-radius: 8px;
-    flex-shrink: 0;
+  
 }
 
 
 
 .pedido-nombre {
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     font-size: clamp(20px, 1.4vw, 15px);
     color: #605656;
     font-weight: 700;
@@ -276,7 +275,7 @@ header {
 }
 
 .pedido-precio {
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     font-size: clamp(18px, 1.3vw, 14px);
     color: #999;
 }
@@ -293,7 +292,7 @@ header {
 }
 
 .pedido-fecha-recibir span {
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     font-size: clamp(20px, 1.2vw, 13px);
     color: #999;
 }
@@ -311,7 +310,7 @@ header {
 }
 
 .pedido-total {
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     font-size: clamp(20px, 1.5vw, 16px);
     font-weight: 700;
     color: #605656;
@@ -324,19 +323,19 @@ header {
 }
 
 .btn-detalles {
-    background: #EA6872;
+    background: #FF8B94;
     color: #fff;
     border: none;
     padding: 12px 30px 8px;
     border-radius: 10px;
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;
 }
 
 .btn-detalles:hover {
-    background: #d9555f;
+    background: #ffc0c5;
 }
 
 
@@ -386,7 +385,7 @@ header {
 .lado-izquierdo p {
     text-decoration: underline;
     padding-top: 15px;
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     color: #f5f5f5;
     font-size: 25px;
     font-weight: 400;
