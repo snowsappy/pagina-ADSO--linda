@@ -91,7 +91,7 @@ header {
 .button {
     background-color: #FFAAA5;
     width: 63.3%;
-   
+
     border-radius: 200px;
     cursor: pointer;
     position: relative;
@@ -295,7 +295,7 @@ input {
     top: 0.3vh;
     font-size: 22px;
     font-weight: 600;
-    color:#605656;
+    color: #605656;
 }
 
 #ordenar img {
@@ -376,7 +376,7 @@ input {
 }
 
 .caja article {
-    background-color: #FFF2ED;
+    background-color: #F5FAEB;
     height: 600px;
     border-radius: 20px;
     justify-items: end;
@@ -389,11 +389,11 @@ input {
 .texto-caja {
     font-family: "manjari";
     justify-content: space-between;
-    color: #6F2E14;
+    color: #2A481F;
 }
 
 .compra {
-    background-color: #FF716C;
+    background-color: #86BA7F;
     padding: 24px 0px 24px 0px;
     height: 60px;
     width: 150px;
@@ -464,7 +464,7 @@ input {
     font-family: "manjari";
     font-weight: 550;
     font-size: 30px;
-    color: #6F2E14;
+    color: #2A481F;
 }
 
 /* canasta de regalo */
@@ -835,9 +835,11 @@ input {
         display: flex;
         gap: 30px;
     }
-    .redes{
+
+    .redes {
         display: none;
     }
+
     .hero-regalo::before {
 
         width: 60%;
@@ -929,232 +931,225 @@ input {
     }
 
 
-.pedidos {
-    background-color: #fff9f6;
-    height: 50vh;
-    /*el widht no sirve*/
-    border-radius: 20px;
-    justify-items: end;
-    padding: 20px;
-    gap: 15px;
-    display: flex;
-    flex-direction: column;
-}
+    .pedidos {
+        background-color: #fff9f6;
+        height: 50vh;
+        /*el widht no sirve*/
+        border-radius: 20px;
+        justify-items: end;
+        padding: 20px;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
 
-.boton-image {
-    width: 180px;
-    height: 160px;
-    overflow: hidden;
-    border-radius: 15px;
-    clip-path: polygon(100% 0, 100% 67%, 76% 100%, 0 100%, 0 0);
-    position: relative;
-}
+    .boton-image {
+        width: 180px;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 15px;
+        clip-path: polygon(100% 0, 100% 67%, 76% 100%, 0 100%, 0 0);
+        position: relative;
+    }
 
-.boton-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+    .boton-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 
-.boton {
-    left: 86.6%;
-    top: 827.8%;
-    padding: 5px;
-}
+    .boton {
+        left: 66.6%;
+        top: 400.8%;
+        padding: 10px;
+    }
 
-.boton1 {
-    left: 23.6%;
-    top: 827.8%;
-    padding: 5px;
-}
+    .boton1 {
+        left: 66.6%;
+        top: 456%;
+        padding: 10px;
+    }
 
-.boton2 {
-    left: 55.6%;
-    top: 827.8%;
-    padding: 4px;
-}
+    .boton2 {
+        left: 66.6%;
+        top: 511.4%;
+        padding: 10px;
+    }
 
-.boton img {
-    width: 18%;
-}
+    .boton img {
+        width: 30%;
+    }
 
-.boton1 img {
-    width: 18%;
-}
+    .boton1 img {
+        width: 30%;
+    }
 
-.boton2 img {
-    width: 18%;
-}
+    .boton2 img {
+        width: 30%;
+    }
 
-.pedidos h4 {
-    font-family: "manrope";
-    font-weight: 600;
-    font-size: 20px;
-    color: #96BA7F;
-}
+    .pedidos h4 {
+        font-family: "manrope";
+        font-weight: 600;
+        font-size: 20px;
+        color: #96BA7F;
+    }
 
-.pedidos p {
-    font-family: "manjari";
-    font-size: 15px;
-    color: #605656;
-}
+    .pedidos p {
+        font-family: "manjari";
+        font-size: 15px;
+        color: #605656;
+    }
 
 
 
-.filtros ul {
-    flex-wrap: wrap;
-    gap: 18px;
-}
+    .filtros ul {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
 
-.filtros li {
-    width: 180px;
-    font-size: 18px;
-}
+    .filtros li {
+        width: 180px;
+        font-size: 18px;
+    }
 
-/* PRODUCTOS */
-.productos {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 20px;
-    gap: 25px;
-}
+    /* PRODUCTOS */
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 20px;
+        gap: 25px;
+    }
 
-.caja article {
-    height: auto;
-}
+    .caja article {
+        height: auto;
+    }
 
-.image {
-    width: 100%;
-    height: 280px;
-}
+    .image {
+        width: 100%;
+        height: 280px;
+    }
 
-.texto-caja h2 {
-    font-size: 20px;
-}
+    .texto-caja h2 {
+        font-size: 20px;
+    }
 
-.precio-compra {
-    font-size: 22px;
-}
+    .precio-compra {
+        font-size: 22px;
+    }
 
-.compra {
-    width: 120px;
-    height: 50px;
-}
+    .compra {
+        width: 120px;
+        height: 50px;
+    }
 
-.canastita {
-    padding-left: 5%;
-    padding-right: 5%;
-}
+    .canastita {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
-.canastita article {
-    flex-direction: row;
-    gap: 0px;
-}
+    .canastita article {
+        flex-direction: row;
+        gap: 0px;
+    }
 
-.imageregalo {
-    width: 100%;
-}
+    .imageregalo {
+        width: 100%;
+    }
 
-.canastita ul {
-    padding-left: 5%;
-}
+    .canastita ul {
+        padding-left: 5%;
+    }
 
-.canastita li {
-    width: 100%;
-    height: 80%;
-    font-size: 20px;
-    gap: 20px;
+    .canastita li {
+        width: 100%;
+        height: 80%;
+        font-size: 20px;
+        gap: 20px;
 
-    font-size: 10px;
-}
+        font-size: 10px;
+    }
 
-.regalosagre p {
-    font-size: 20px;
-}
+    .regalosagre p {
+        font-size: 20px;
+    }
 
-.parrafos {
-    font-size: 10px;
-    top: 40px;
-}
+    .parrafos {
+        font-size: 10px;
+        top: 40px;
+    }
 
-.botoncito {
-    width: 95%;
-    height: 38px;
-    top: 5vh;
-    font-size: 20px;
-    left: 5%;
-    border-radius: 10px;
-}
+    .botoncito {
+        width: 95%;
+        height: 38px;
+        top: 5vh;
+        font-size: 20px;
+        left: 5%;
+        border-radius: 10px;
+    }
 
-.imageregalo {
-    width: 100%;
-}
+    .imageregalo {
+        width: 100%;
+    }
 
-.imageregalo img {
-    width: 50vh;
-}
+    .imageregalo img {
+        width: 50vh;
+    }
 
-/* BOTONES PÁGINAS */
-.botones-pagina {
-    flex-wrap: wrap;
-    gap: 30px;
-}
+    /* BOTONES PÁGINAS */
+    .botones-pagina {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
-.pedidos {
-    width: 80%;
-    height: auto;
-}
+    .pedidos {
+        width: 80%;
+        height: auto;
+    }
 
-.boton-image {
-    width: 100%;
-    height: 300px;
-}
+    .boton-image {
+        width: 100%;
+        height: 300px;
+    }
 
-.boton,
-.boton1,
-.boton2 {
+    /* FOOTER */
+    .pie {
+        flex-direction: row;
+        gap: 20px;
+        text-align: center;
+    }
 
-    top: 500%;
-}
+    .logo-footer img {
+        width: 20%;
+    }
 
-/* FOOTER */
-.pie {
-    flex-direction: row;
-    gap: 20px;
-    text-align: center;
-}
+    .lado-izquierdo {
+        flex-direction: row;
+    }
 
-.logo-footer img {
-    width: 20%;
-}
+    .lado-izquierdo img {
+        width: 13%;
+    }
 
-.lado-izquierdo {
-    flex-direction: row;
-}
+    .lado-izquierdo p {
+        font-size: 15px;
+        align-self: start;
+    }
 
-.lado-izquierdo img {
-    width: 13%;
-}
+    .pie ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-.lado-izquierdo p {
-    font-size: 15px;
-    align-self: start;
-}
+    .image-footer img {
+        width: 90%
+    }
 
-.pie ul {
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.image-footer img {
-    width: 90%
-}
-
-.hamburguesa {
-    display: none;
-}
+    .hamburguesa {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -1393,7 +1388,7 @@ input {
     }
 
     .pedidos {
-    
+
         width: 100%;
         height: auto;
     }
@@ -1403,10 +1398,34 @@ input {
         height: 220px;
     }
 
-    .boton,
-    .boton1,
+    .boton {
+        left: 73.6%;
+        top: 525%;
+        padding: 8px 6px 4px;
+    }
+
+    .boton1 {
+        left: 73.6%;
+        top: 570%;
+        padding: 8px 6px 4px;
+    }
+
     .boton2 {
-        display: none;
+        left: 73.6%;
+        top: 616%;
+        padding: 8px 6px 4px;
+    }
+
+    .boton img {
+       width: 25%;
+    }
+
+    .boton1 img {
+        width: 25%;
+    }
+
+    .boton2 img {
+        width: 25%;
     }
 
     .pedidos h4 {
@@ -1414,7 +1433,7 @@ input {
     }
 
     .pedidos p {
-        
+
         font-size: 14px;
     }
 
@@ -1431,7 +1450,7 @@ input {
     }
 
     /* FOOTER */
-  .pie {
+    .pie {
         flex-direction: row;
         align-items: center;
         gap: 16px;
@@ -1468,12 +1487,14 @@ input {
     .lado-izquierdo img {
         width: 25px;
     }
-    .image-footer ul{
+
+    .image-footer ul {
         gap: 8px;
     }
+
     .image-footer img {
         width: 20px;
         height: 20px;
-        
+
     }
 }

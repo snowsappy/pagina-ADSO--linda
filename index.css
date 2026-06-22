@@ -367,6 +367,9 @@ h1 {
     align-items: center;
 }
 
+.compra:hover{
+    background: #FA9A96;
+}
 
 .image {
 
@@ -650,8 +653,14 @@ h1 {
 
 .filtros li p {
     font-family: "manrope";
-    color: #605656;
+    color: #EA6872;
     font-size: 25px;
+}
+
+.filtros li:hover,
+.filtros li p:hover{
+    background: #EA6872;
+    color: white;
 }
 
 /*pie de pagina*/
