@@ -315,7 +315,27 @@ header {
     transition: opacity 0.3s ease;
 }
 
-
+.botonesmapa{
+    width: 18vh;
+    height: 7.4vh;
+    background-color: #6DB385;
+    border-radius: 20vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 20%;
+    top: 7vh;
+}
+.botonesmapa img{
+   width: 100vh;
+  padding: 17%;
+  transform: scale();
+  transform: rotate(220deg);
+  
+}
+#derecha{
+    transform: rotate(38deg);
+}
 .mapa {
     position: relative;
     width: 100%;
@@ -338,25 +358,27 @@ header {
 
 .mapa-cuadro {
     position: absolute;
-    inset: 0;
+  
     display: flex;
     align-items: flex-start;
     padding: 20px;
     left: 2%;
     top: 3%;
+   
 }
+
 .texto p{
     font-family: "manjari";
 
 }
 .mapa-info {
     background: #305321;
-    border-radius: 10px;
+    border-radius: 23px;
     padding: 2vh 2vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    min-width: 300px;
+    width:35vh;
     height: 200px;
 }
 

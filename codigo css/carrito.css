@@ -100,7 +100,7 @@ header {
 
 .title h2 {
     font-family: "Manrope", sans-serif;
-    color: #CCCCCC;
+    color: #605656;
     font-size: clamp(2rem, 3vw, 4rem);
     font-weight: 700;
 }
@@ -112,11 +112,6 @@ header {
     margin-top: 10px;
 }
 
-/* ══════════════════════════════
-   GRID DEL CARRITO — escritorio
-   Col 1: banner + productos
-   Col 2: resumen (ocupa 2 filas)
-   ══════════════════════════════ */
 .cart-grid {
     display: grid;
     grid-template-columns: 1fr 400px;
@@ -424,7 +419,8 @@ header {
     padding: 2%;
     margin-top: 2%;
     align-items: center;
-
+    position: absolute;
+    bottom: 0%;
 }
 
 .pie ul {
