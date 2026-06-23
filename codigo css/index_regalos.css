@@ -246,9 +246,23 @@ input {
     font-weight: 500;
     color: #D3C5F6
 }
+.angel:hover{
+    color: #e7dfff;
+}
+.angel:active{
+    color: #9b81eb;
+}
+#ordenar:hover{
+    background-color: #e7dfff;
+    
+}
+#ordenar:active{
+    background-color: #9b81eb;
+}
 #ordenar p{
     color: #3D2C62;
 }
+
 .filtros ul {
     display: flex;
     justify-content: center;
@@ -271,7 +285,9 @@ input {
     padding-top: 0.5%;
     color: #605656;
 }
-
+.filtros li:hover{
+    color: #5D9F62;
+}
 .filtros {
     margin-top: 2.5%;
     margin-left: 5.2%;
@@ -333,9 +349,6 @@ input {
 
 }
 
-/*bordes */
-/*barra de modos */
-
 
 /*cada productos*/
 .productos {
@@ -387,7 +400,9 @@ input {
     justify-content: center;
     align-items: center;
 }
-
+.compra:hover{
+    background-color: #a3d19d;
+}
 
 .image {
 
@@ -488,6 +503,9 @@ input {
     height: 4.5vh;
     padding: 0%;
 }
+.regalo-canasta-boton1:hover,.regalo-canasta-boton2:hover,.regalo-canasta-boton3:hover,.regalo-canasta-boton4:hover,.regalo-canasta-boton5:hover,.regalo-canasta-boton6:hover,.regalo-canasta-boton7:hover{
+    background-color:#6db67a ;
+}
 /* canasta de regalo */
 #titulo {
     display: flex;
@@ -572,7 +590,16 @@ input {
     font-family: "manjari";
     font-size: 4vh;
 }
-
+.botoncito p{
+    padding-top: 1vh;
+    
+}
+.botoncito:hover{
+    background-color: #ff9e71;
+}
+.botoncito:active{
+    background-color: #c95c31;
+}
 .regalosagre ul {
 
     display: flex;

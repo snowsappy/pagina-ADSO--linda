@@ -282,17 +282,20 @@ input {
     border: 1px solid;
     font-family: "manjari";
     font-size: 30px;
-    width: 200px;
-    padding: 20px 45px 10px 45px;
+    width: 180px;
+    padding: 17px 30px 10px 30px;
     border-radius: 35px;
     color: #EA6872;
     gap: 10px;
+    margin: 0%;
+    
 
 }
 
 .filtros summary img {
     width: 25px;
     height: 25px;
+    margin: 0%;
 }
 
 summary::-webkit-details-marker {
@@ -301,6 +304,17 @@ summary::-webkit-details-marker {
 
 .filtros {
     padding: 70px 0px 0px 257px;
+    margin: 0%;
+
+}
+.filtros summary:hover{
+    background-color: #EA6872;
+    color: #f5f5f5;
+    
+}
+.filtros summary:active{
+    background-color: #b43a44;
+   
 }
 
 .hero-content p {
@@ -368,7 +382,9 @@ h1 {
 .compra:hover{
     background: #FA9A96;
 }
-
+.compra:active{
+    background-color: #b43a44;
+}
 .image {
 
     width: 400px;
@@ -514,7 +530,20 @@ h1 {
     color: #FF8751;
     margin-left: 4%;
 }
-
+#vermas:hover{
+    border-color: #ff9e71;
+    color: #ff9e71;
+}
+.contenido-video button:hover{
+    background-color:#ff9e71 ;
+}
+.contenido-video button:active{
+    background-color: #c95c31;
+}
+#vermas:active{
+    border-color:  #c95c31;
+    color: #c95c31;
+}
 .contenido-video button {
 
     background-color: #FF8751;
@@ -644,14 +673,19 @@ h1 {
     list-style: none;
     gap: 20px;
     padding: 20px;
-
+    margin: 0%;
 }
 
 .filtros li {
     color: #EA6872;
     border: 1px solid;
-    padding: 7px 20px 9px 20px;
+    width: 17vh;
+    height: 6.4vh;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
 }
 
 .filtros li p {
