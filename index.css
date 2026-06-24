@@ -768,6 +768,7 @@ h1 {
     .hamburguesa {
         display: block;
         font-size: 35px;
+          color: #EA6872;
     }
 
     .logo {
@@ -794,9 +795,16 @@ h1 {
     }
 
     .iconos {
-        width: 100px;
+        width: 70px;
         overflow: hidden;
+        ;
     }
+
+
+
+
+
+
 
     .iconos img {
         width: 30px !important;
@@ -960,6 +968,7 @@ h1 {
 
     .pedidos {
         height: 40vh;
+        background-color: #ffffff;
     }
 
     .boton {
@@ -1026,6 +1035,7 @@ h1 {
     .hamburguesa {
         display: block;
         font-size: 35px;
+        color: #EA6872;
     }
 
     .logo {
@@ -1056,6 +1066,7 @@ h1 {
     .hero {
         padding: 0px 0px 0px 60px;
         gap: 120px;
+        
     }
 
     .hero h1 {
@@ -1080,19 +1091,19 @@ h1 {
     }
 
     .mini-images img {
-        width: 60%;
+        width: 70%;
     }
 
     .linea {
         width: 20%;
-        left: 70%;
+        left: 71.5%;
         top: 113%;
     }
 
     .hero::after {
         width: 40%;
-        height: 60%;
-        top: 40%;
+        height: 80%;
+        top: 48%;
     }
 
     .filtros {
@@ -1123,7 +1134,7 @@ h1 {
     }
 
     .pedidos {
-        background-color: #fff9f6;
+      background-color: #ffffff;
         height: 50vh;
         /*el widht no sirve*/
         border-radius: 20px;
@@ -1134,62 +1145,152 @@ h1 {
         flex-direction: column;
     }
 
-    .boton-image {
-        width: 180px;
-        height: 160px;
-        overflow: hidden;
-        border-radius: 15px;
-        clip-path: polygon(100% 0, 100% 67%, 76% 100%, 0 100%, 0 0);
-        position: relative;
-    }
-
-    .boton-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .boton {
-        left: 86.6%;
-        top: 827.8%;
-        padding: 5px;
+   .boton {
+        left: 66.6%;
+        top: 400.8%;
+        padding: 10px;
     }
 
     .boton1 {
-        left: 23.6%;
-        top: 827.8%;
-        padding: 5px;
+        left: 66.6%;
+        top: 456%;
+        padding: 10px;
     }
 
     .boton2 {
-        left: 55.6%;
-        top: 827.8%;
-        padding: 4px;
+        left: 66.6%;
+        top: 511.4%;
+        padding: 10px;
     }
-
     .boton img {
-        width: 18%;
+        width: 30%;
     }
 
     .boton1 img {
-        width: 18%;
+        width: 30%;
     }
 
     .boton2 img {
-        width: 18%;
+        width: 30%;
+    }
+  /* BOTONES PÁGINAS */
+    .botones-pagina {
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
-    .pedidos h4 {
-        font-family: "manrope";
-        font-weight: 600;
+    .pedidos {
+        width: 80%;
+        height: auto;
+    }
+
+    .boton-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 50px;
+        margin-left: 14%;
+        margin-right: 14%;
+        justify-items: center;
+        justify-content: center;
+    }
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 20px;
+        gap: 25px;
+    }
+    .caja article {
+        height: auto;
+    }
+
+    .image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .texto-caja h2 {
         font-size: 20px;
-        color: #96BA7F;
     }
 
-    .pedidos p {
-        font-family: "manjari";
-        font-size: 15px;
-        color: #605656;
+    .precio-compra {
+        font-size: 22px;
+    }
+
+    .compra {
+        width: 120px;
+        height: 50px;
+    }
+
+    .video-promocional {
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-image {
+        width: 100%;
+        height: 45vh;
+        margin-left: 0;
+        border-radius: 12px;
+    }
+
+    .video-image video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .contenido-video {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-video h2 {
+        font-size: 6vh;
+        bottom: 0;
+    }
+
+    .contenido-video p {
+        font-size: 2.2vh;
+        bottom: 0;
+        max-width: 90%;
+    }
+
+    .contenido-video h4 {
+        font-size: 3vh;
+    }
+
+    .image-promotional {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .image-promotional img {
+        width: 48%;
+        border-radius: 12px;
+    }
+
+    .contenido-video button {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+        bottom: 0;
+    }
+
+    #vermas {
+        margin-left: 0;
     }
 }

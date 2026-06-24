@@ -554,13 +554,13 @@ header {
         font-size: 3rem;
     }
 
-    .botones-tiempo {
+    .botones-tiempo{
         padding: 0%;
         margin: 4%;
         gap: 10px;
     }
 
-    .btntiempo {
+    .btntiempo,.btntiempo1{
         width: 70px;
         font-size: 18px;
         height: 50px;
@@ -578,7 +578,17 @@ header {
         padding: 3%;
         margin: 0%;
     }
+    .carta:hover .texto{
+    opacity: 0;
+}
 
+.texto:hover{
+    display: none;
+}
+.carta:hover .eq-hover-img{
+    opacity: 1;
+
+}
     .texto {
         gap: 10px;
     }
@@ -675,7 +685,7 @@ header {
         margin: 10px 0;
     }
 
-    .btntiempo {
+    .btntiempo,.btntiempo1 {
         width: 60px;
         height: 40px;
         font-size: 14px;
@@ -696,11 +706,14 @@ header {
 
     .equipoA {
         gap: 15px;
-
+        flex-direction: column;
+       
+        align-items: center;
     }
 
     .carta {
-        width: 48%;
+        width: 70%;
+       
         padding: 2%;
         border-radius: 10px;
     }
@@ -708,14 +721,15 @@ header {
     .texto {
         gap: 8px;
         text-align: center;
+        padding: 15px;
     }
 
     .texto h4 {
-        font-size: 1.6vh;
+        font-size: 3vh;
     }
 
     .texto p {
-        font-size: 1vh;
+        font-size: 2vh;
     }
 
     .ti {
@@ -729,7 +743,7 @@ header {
     .mapa-info {
         min-width: 200px;
         height: auto;
-        padding: 10px;
+        padding: 20px;
     }
 
     .mapa-info h3 {
@@ -739,7 +753,10 @@ header {
     .mapa-info p {
         font-size: 14px;
     }
-
+    .botonesmapa{
+        position: relative;
+        
+    }
     .pie {
         flex-direction: row;
         align-items: center;
@@ -754,7 +771,7 @@ header {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: -136.5%;
+        bottom: -185.5%;
     }
 
 
