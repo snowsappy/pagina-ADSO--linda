@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+    
+}
+
+
+.banner{
+    width: 100%;
+    height: 56vh;
+    background-repeat: no-repeat;
+    background-image: url(../images/preferencial.png);
+    background-size: cover;
+}
+.banner h1{
+    padding: 10%;
+    font-family: "lilita one";
+    font-size: 13vh;
+}
+
+.info-usuario{
+    margin: 5%;
+    background-color: antiquewhite;
+    height: 30vh;
+    border-radius: 20px;
+    display: flex;
+    gap:2vh;
+    padding: 1%;
+    font-family: "manjari";
+}
+h2{
+    text-align: center;
+}
+.info-usuario h4{
+    font-weight: 600;
+    font-size: 40px;
+}
+.info-usuario h6{
+    font-size: 20px;
+    font-weight: 400;
+}
+.info-usuario p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 1vh;
+}
+.info-usuario progress{
+    margin-top: 11vh;
+    width: 120vh;
+    
+}
+.productos {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(30px,1fr));*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+
+    position: relative;
+    gap: 50px;
+    margin-left: 14%;
+    margin-right: 14%;
+    justify-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.caja {
+    gap: 40%;
+}
+
+.caja article {
+    background-color: #F5FAEB;
+    height: 600px;
+    border-radius: 20px;
+    justify-items: end;
+    padding: 15px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.texto-caja {
+    font-family: "manjari";
+    justify-content: space-between;
+    color: #2A481F;
+}
+
+.compra {
+    background-color: #86BA7F;
+    padding: 24px 0px 24px 0px;
+    height: 60px;
+    width: 150px;
+    border-radius: 9px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.compra:hover{
+    background-color: #a3d19d;
+}
+
+.image {
+
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.image img {
+    width: 100%;
+    height: 120%;
+
+    object-position: center;
+    object-fit: fill;
+
+
+}
+
+.precio-compra {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: "manjari";
+    font-size: 30px;
+    align-items: center;
+}
+
+.texto-caja h2 {
+
+    font-size: 25px;
+
+}
+
+.texto-caja p {
+    margin-top: 10px;
+
+}
+
+.espacios {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: end;
+
+}
+
+.espacios img {
+    width: 29%;
+
+}
+
+.espacios h4 {
+    
+    font-family: "manjari";
+    font-weight: 550;
+    font-size: 30px;
+    color: #2A481F;
+}
+.regalo-canasta-boton1,.regalo-canasta-boton2,.regalo-canasta-boton3,.regalo-canasta-boton4,.regalo-canasta-boton5,.regalo-canasta-boton6,.regalo-canasta-boton7{
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    clip-path: circle();
+    color: #5B9346;  
+    background-color: #5B9346;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1%;
+    left: -3%;
+}
+.regalo-canasta-boton2{
+     top: 1%;
+     left: 32%;
+}
+.regalo-canasta-boton3{
+    top: 1%;
+    left: 67%;
+}
+.regalo-canasta-boton5{
+     top: 50%;
+    left: 67.5%;
+
+}
+.regalo-canasta-boton6{
+    top: 50%;
+    left: 32%;
+}
+.regalo-canasta-boton7{
+    top: 50%;
+     left: -3%;
+}
+.regalo-canasta-boton1 img,.regalo-canasta-boton2 img,.regalo-canasta-boton3 img,.regalo-canasta-boton4 img,.regalo-canasta-boton5 img,.regalo-canasta-boton6 img,.regalo-canasta-boton7 img{
+    width: 4.5vh;
+    height: 4.5vh;
+    padding: 0%;
+}
+.regalo-canasta-boton1:hover,.regalo-canasta-boton2:hover,.regalo-canasta-boton3:hover,.regalo-canasta-boton4:hover,.regalo-canasta-boton5:hover,.regalo-canasta-boton6:hover,.regalo-canasta-boton7:hover{
+    background-color:#6db67a ;
+}
