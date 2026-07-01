@@ -1024,8 +1024,54 @@ input {
         object-fit: cover;
         object-position: center;
     }
+  .regalo-canasta-boton1 {
+        top: -1%;
+        left: 0%;
+    }
 
-    .boton {
+    .regalo-canasta-boton2 {
+        top: -1%;
+        left: 50%;
+
+    }
+
+    .regalo-canasta-boton3 {
+        top: 32%;
+        left: 50%;
+    }
+
+    .regalo-canasta-boton5 {
+        top: 32%;
+        left: 0%;
+
+    }
+
+    .regalo-canasta-boton6 {
+        top: 65%;
+        left: 50%;
+    }
+
+    .regalo-canasta-boton7 {
+        top: 65%;
+        left: 0%;
+    }
+
+    .regalo-canasta-boton1 img,
+    .regalo-canasta-boton2 img,
+    .regalo-canasta-boton3 img,
+    .regalo-canasta-boton4 img,
+    .regalo-canasta-boton5 img,
+    .regalo-canasta-boton6 img,
+    .regalo-canasta-boton7 img {
+        width: 4.0vh;
+        height: 4.0vh;
+        padding: 0%;
+    }
+
+
+
+
+ .boton {
         left: 66.6%;
         top: 400.8%;
         padding: 10px;
@@ -1462,7 +1508,64 @@ input {
         height: 220px;
     }
 
-    .boton {
+     .regalo-canasta-boton1 {
+        top: 14.6%;
+        left: 5%;
+    }
+
+    .regalo-canasta-boton2 {
+        top: -2%;
+        left: 5%;
+
+    }
+
+    .regalo-canasta-boton3 {
+        top: 31%;
+        left: 5%;
+    }
+
+    .regalo-canasta-boton5 {
+        top: 47.2%;
+        left: 5%;
+        ;
+
+    }
+
+    .regalo-canasta-boton6 {
+        top: 63.5%;
+        left: 5%;
+    }
+
+    .regalo-canasta-boton7 {
+        top: 79.5%;
+        left: 5%;
+    }
+
+    .regalo-canasta-boton1 img,
+    .regalo-canasta-boton2 img,
+    .regalo-canasta-boton3 img,
+    .regalo-canasta-boton4 img,
+    .regalo-canasta-boton5 img,
+    .regalo-canasta-boton6 img,
+    .regalo-canasta-boton7 img {
+        width: 4.5vh;
+        height: 4.5vh;
+        padding: 0%;
+    }
+
+    .regalo-canasta-boton1,
+    .regalo-canasta-boton2,
+    .regalo-canasta-boton3,
+    .regalo-canasta-boton4,
+    .regalo-canasta-boton5,
+    .regalo-canasta-boton6,
+    .regalo-canasta-boton7 {
+
+        width: 15%;
+        height: 8%;
+
+    }
+ .boton {
         left: 73.6%;
         top: 525%;
         padding: 8px 6px 4px;
@@ -1479,7 +1582,6 @@ input {
         top: 616%;
         padding: 8px 6px 4px;
     }
-
     .boton img {
        width: 25%;
     }
