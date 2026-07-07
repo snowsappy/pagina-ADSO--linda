@@ -9,19 +9,20 @@
 
 }
 
-
 .banner {
     width: 100%;
     height: 56vh;
     background-repeat: no-repeat;
     background-image: url(../images/preferencial.png);
     background-size: cover;
+
 }
 
 .banner h1 {
     padding: 10%;
     font-family: "lilita one";
     font-size: 13vh;
+
 }
 
 .info-usuario {
@@ -33,12 +34,17 @@
     gap: 2vh;
     padding: 1%;
     font-family: "manjari";
-}
 
+}
+/*
+.contenido{
+    display: flex;
+    flex-direction: column;
+}
 h2 {
     text-align: center;
 }
-
+/*
 .info-usuario h4 {
     font-weight: 600;
     font-size: 40px;
@@ -49,11 +55,11 @@ h2 {
     font-weight: 400;
 }
 
-.info-usuario p {
+/*.info-usuario p {
     font-size: 20px;
     font-weight: 300;
     margin-top: 1vh;
-}
+}*/
 
 .info-usuario progress {
     margin-top: 11vh;
@@ -237,10 +243,7 @@ h2 {
     background-color: #6db67a;
 }
 
-h4{
-    margin: 10% 20%;
-    text-align: center;
-}
+
 .info-beneficios{
     width: 100%;
     height: 70vh;

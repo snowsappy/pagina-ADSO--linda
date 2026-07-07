@@ -1,16 +1,16 @@
 const botones = document.querySelectorAll(".botones-tiempo");
 const imagen = document.querySelector(".img-grande img");
-const imagenpequena =document.querySelector(".img-pequena")
-const titulo =document.querySelector(".historia-derecha h2")
-const subtitulo = document.querySelector(".textocuadro h3")
-const texto = document.querySelector(".textocuadro p")
+const imagenpequena =document.querySelector(".img-pequena");
+const titulo =document.querySelector(".historia-derecha h2");
+const subtitulo = document.querySelector(".textocuadro h3");
+const texto = document.querySelector(".textocuadro p");
 
 botones.forEach(boton => {
 
     boton.addEventListener("click", (event) => {
 
         const btnSeleccionado = event.target.textContent;
-         boton.style.color = "red";
+         
 
         switch (btnSeleccionado) {
 
