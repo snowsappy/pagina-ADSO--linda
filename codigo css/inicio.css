@@ -267,8 +267,9 @@ body{
    
     .formulario{
         width: 100%;
+       
     }
-
+   
     .formulario li{
         width: 100%;
     }
@@ -337,9 +338,13 @@ body{
         left: -21%;
         
     }
-    .formulario ul{
+    .formulario li{
         width: 110%;
-        left: -130%;
+        left: -30%;
         position: relative;
+    }
+    ul{
+        position: relative;
+        width: 90%;
     }
 }
