@@ -10,8 +10,9 @@ body{
     background-image: url(../images/ChatGPT\ Image\ 19\ jun\ 2026\,\ 12_25_04.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 .superclase{
     display: flex;
@@ -155,33 +156,36 @@ body{
 
 @media (max-width:768px){
 
-    body{
+   body{
         background-size: cover;
         background-position: center;
+        height: 100vh;
+        overflow: hidden;
     }
 
     .superclase{
-        justify-content: center;
-        padding: 25px;
+        flex-direction: column;
+        gap: 30px;
+        padding: 5%;
     }
 
     .registro{
-        width: 70%;
+        width: 75%;
         height: auto;
+        padding: 40px 0;
         left: 0;
-        padding: 35px 25px;
     }
 
     .registro h1{
-        font-size: 40px;
+        font-size: 4.5vh;
     }
 
     .formulario li{
         width: 100%;
     }
 
-    .form input{
-        width: 100%;
+    .form{
+        width: 90%;
     }
 
     .n button{
@@ -189,52 +193,87 @@ body{
         padding: 15px;
     }
 
-    .ima,
-    #texto,
+    .ima{
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ima img{
+        width: 55%;
+    }
+
+    #texto{
+        position: static;
+        text-align: center;
+    }
+
     .switches{
         display: none;
+    }
+    ul{
+        position: relative;
+        width: 205%;
+        right: 42%;
+    }
+    .n{
+        width: 82%;
+        text-align: center;
+    }
+    
+    #hola{
+        position: relative;
+        left: -7%;
+        
+
     }
 }
 
 @media (max-width:428px){
 
+    *{
+        overflow: hidden;
+    }
     body{
         background-size: cover;
         background-position: center;
+        height: 100vh;
+        
     }
 
     .superclase{
+        flex-direction: column;
         padding: 15px;
+        gap: 20px;
     }
 
     .registro{
-        width: 100%;
+        width: 95%;
         height: auto;
-        padding: 25px 20px;
+        padding: 25px 15px;
+        left: 0;
         border-radius: 15px;
     }
 
     .registro h1{
-        font-size: 32px;
-        text-align: center;
-    }
-
-    #hola{
-        font-size: 14px;
-        bottom: 0;
+        font-size: 2rem;
         text-align: center;
     }
 
     .registro p{
         width: 100%;
+        text-align: center;
     }
-
-    .formulario ul{
-        gap: 20px;
-        bottom: 0;
+   
+    .formulario{
+        width: 100%;
     }
 
     .formulario li{
+        width: 100%;
+    }
+
+    .form input{
         width: 100%;
     }
 
@@ -242,25 +281,65 @@ body{
         font-size: 16px;
     }
 
-    .form input{
-        width: 100%;
-        height: 45px;
-    }
-
     .n{
         width: 100%;
-        bottom: 0;
     }
 
     .n button{
         width: 100%;
         padding: 14px;
-        font-size: 18px;
+        font-size: 16px;
+
     }
 
-    .ima,
-    #texto,
+    #hola{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #texto{
+        position: static;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 15px;
+        right: 0;
+        bottom: 0;
+    }
+
     .switches{
+        position: static;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .switches button,
+    #registrarse{
+        font-size: 15px;
+    }
+
+    .ima{
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ima img{
+        width: 85%;
+        max-width: 220px;
+    }
+     .switches{
         display: none;
+    }
+    #hola{
+        left: -21%;
+        
+    }
+    .formulario ul{
+        width: 110%;
+        left: -130%;
+        position: relative;
     }
 }

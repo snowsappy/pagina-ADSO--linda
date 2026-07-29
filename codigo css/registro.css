@@ -12,7 +12,7 @@ body{
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    
+    overflow: hidden;
 }
 .superclase{
     display: flex;
@@ -136,6 +136,8 @@ body{
     body{
         background-size: cover;
         background-position: center;
+        height: 100vh;
+        overflow: hidden;
     }
 
     .superclase{
@@ -184,20 +186,36 @@ body{
     }
 
     .switches{
-        position: static;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 15px;
+        display: none;
+    }
+    ul{
+        position: relative;
+        width: 205%;
+        right: 42%;
+    }
+    .n{
+        width: 82%;
+        text-align: center;
+    }
+    
+    #hola{
+        position: relative;
+        left: -7%;
+        
+
     }
 }
 
 
 @media (max-width: 425px) {
-
+    *{
+        overflow: hidden;
+    }
     body{
         background-size: cover;
         background-position: center;
+        height: 100vh;
+        
     }
 
     .superclase{
@@ -223,7 +241,7 @@ body{
         width: 100%;
         text-align: center;
     }
-
+   
     .formulario{
         width: 100%;
     }
@@ -288,4 +306,17 @@ body{
         width: 85%;
         max-width: 220px;
     }
+     .switches{
+        display: none;
+    }
+    #hola{
+        left: -21%;
+        
+    }
+    .formulario ul{
+        width: 110%;
+        left: 0;
+    }
+        
+    
 }
