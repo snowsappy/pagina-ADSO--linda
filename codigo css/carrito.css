@@ -471,17 +471,10 @@ header {
     font-weight: 400;
 }
 
-/* ══════════════════════════════
-   TABLET — 768px
-   Todo en una columna:
-   banner → productos → resumen
-   ══════════════════════════════ */
-/* ══════════════════════════════
-   TABLET — 768px
-   ══════════════════════════════ */
+
 @media (max-width: 768px) {
 
-    /* Cart grid */
+    
     .cart-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -509,13 +502,14 @@ header {
         padding: 4px 8px;
     }
 
-    /* ── Footer ── */
+    
     .pie {
         flex-direction: row;
         align-items: center;
         gap: 20px;
         padding: 5%;
         position: relative;
+        margin-top: 15px;
     }
 
     .logo-footer {
@@ -551,12 +545,10 @@ header {
     }
 }
 
-/* ══════════════════════════════
-   MÓVIL — 425px
-   ══════════════════════════════ */
+
 @media (max-width: 425px) {
 
-    /* Cart */
+
     .main {
         padding-left: 12px;
         padding-right: 12px;
@@ -588,7 +580,7 @@ header {
         width: 100%;
     }
 
-    /* ── Header ── */
+  
     .menu nav {
         display: none;
     }
@@ -602,13 +594,14 @@ header {
         padding: 4px 8px;
     }
 
-    /* ── Footer ── */
+ 
     .pie {
         flex-direction: column;
         align-items: center;
         gap: 16px;
         padding: 6%;
         position: relative;
+        margin-top: 15px;
     }
 
     .logo-footer {
@@ -649,13 +642,10 @@ header {
     }
 }
 
-/* ══════════════════════════════
-   MÓVIL — 425px
-   Igual estructura pero compacto
-   ══════════════════════════════ */
+
 @media (max-width: 425px) {
 
-    /* Cart */
+
     .main {
         padding-left: 12px;
         padding-right: 12px;
@@ -687,7 +677,7 @@ header {
         width: 100%;
     }
 
-    /* ── Header ── */
+  
     .menu nav {
         display: none;
     }
@@ -701,7 +691,7 @@ header {
         padding: 4px 8px;
     }
 
-    /* ── Footer ── */
+
     .pie {
         flex-direction: column;
         align-items: center;

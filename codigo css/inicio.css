@@ -189,18 +189,20 @@ body{
     }
 
     .n button{
-        width: 100%;
+        width: 86%;
         padding: 15px;
+
     }
 
     .ima{
         left: 0;
         display: flex;
         justify-content: center;
+        margin-top: 10%;        
     }
 
     .ima img{
-        width: 55%;
+        width: 40%;
     }
 
     #texto{
@@ -219,11 +221,13 @@ body{
     .n{
         width: 82%;
         text-align: center;
+        position: relative;
+        bottom: 60px;
     }
     
     #hola{
         position: relative;
-        left: -7%;
+        left: 0%;
         
 
     }
@@ -231,9 +235,7 @@ body{
 
 @media (max-width:428px){
 
-    *{
-        overflow: hidden;
-    }
+  
     body{
         background-size: cover;
         background-position: center;
@@ -287,14 +289,14 @@ body{
     }
 
     .n button{
-        width: 100%;
-        padding: 14px;
+        width: 90%;
+        padding: 12px;
         font-size: 16px;
 
     }
 
     #hola{
-        text-align: center;
+        left: -16%;
         font-size: 14px;
     }
 
@@ -328,23 +330,21 @@ body{
     }
 
     .ima img{
-        width: 85%;
+        margin-top: 15%;
+        width: 60%;
         max-width: 220px;
     }
      .switches{
         display: none;
     }
-    #hola{
-        left: -21%;
-        
-    }
     .formulario li{
         width: 110%;
-        left: -30%;
+        left: 53%;
         position: relative;
     }
     ul{
         position: relative;
         width: 90%;
     }
+
 }

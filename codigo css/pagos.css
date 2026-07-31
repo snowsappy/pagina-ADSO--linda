@@ -99,7 +99,7 @@ header {
     align-items: start;
 }
 
-/* ── Columna izquierda: los 3 bloques sin wrapper ── */
+
 .proceso-col {
     display: flex;
     flex-direction: column;
@@ -338,7 +338,7 @@ header {
     line-height: 1.4;
 }
 
-/*pie de pagina*/
+
 .pie {
     display: flex;
     justify-content: space-between;
@@ -403,9 +403,7 @@ header {
         background: #F0ECEC;
     }
 
-    header {
-        background: #F0ECEC;
-    }
+   
 
     .iconos a img,
     .iconos img {
@@ -445,7 +443,7 @@ header {
         padding: 4px 8px;
     }
 
-     /* ── Footer ── */
+    
     .pie {
         flex-direction: row;
         align-items: center;
@@ -547,14 +545,66 @@ header {
     .menu nav {
         display: none;
     }
-
+    .proceso-items {
+        flex-direction: column;
+        
+    }
+    .btn-volver{
+        display: none;
+    }
+    .proceso-qty {
+   
+    justify-self: start;
+    padding: 4px 22px 2px;
+    border: 1.7px solid #ccc;
+    border-radius: 20px;
+    font-family: "Manjari", sans-serif;
+    font-size: 12px;
+    color: #605656;
+    text-align: center;
+}
     .hamburguesa {
         display: block;
         font-size: 24px;
         cursor: pointer;
         color: #EA6872;
-        background: none;
         padding: 4px 8px;
     }
+    .proceso-precio{
+        position: relative;
+        bottom: 2.5vh;
+    }
+     .navBar {
+        padding: 10px 15px;
+    }
 
+    .hamburguesa {
+        display: block;
+        font-size: 35px;
+        color: #EA6872;;
+    }
+
+    .menu ul {
+        gap: 12px;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .iconos {
+        gap: 8px;
+    }
+
+    .iconos img {
+        width: 22px;
+    }
+    
 }

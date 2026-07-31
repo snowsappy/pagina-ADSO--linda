@@ -978,17 +978,17 @@ h1 {
     }
 
     .boton1 {
-        top: 786%;
-        left: 67%;
-        padding: 4px;
-    }
-
-    .boton2 {
         top: 769%;
-        left: 67%;
+        left: 66.5%;
         padding: 4px;
     }
-
+    
+    .boton2 {
+        top: 725.5%;
+        left: 66.5%;
+        padding: 4px;
+    }
+    
     .boton img {
         padding: 4px;
     }
@@ -1028,7 +1028,9 @@ h1 {
 }
 
 @media ((min-width:426px) and (max-width: 768px)) {
-
+    * {
+        overflow: hidden;
+    }
     .menu nav {
         display: none;
     }
