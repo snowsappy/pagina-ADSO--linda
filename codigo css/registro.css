@@ -263,7 +263,7 @@ body{
     }
 
     .n button{
-        width: 100%;
+        width: 90%;
         padding: 14px;
         font-size: 16px;
     }
@@ -303,19 +303,19 @@ body{
     }
 
     .ima img{
-        width: 85%;
+        width: 80%;
         max-width: 220px;
     }
      .switches{
         display: none;
     }
     #hola{
-        left: -21%;
+        left: -17%;
         
     }
     .formulario ul{
-        width: 110%;
-        left: 0;
+        width: 100%;
+        left: 5%;
     }
         
     

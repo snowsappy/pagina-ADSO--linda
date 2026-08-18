@@ -8,9 +8,6 @@
     box-sizing: border-box;
 }
 
-
-
-
 .navBar {
     position: relative;
     display: flex;
@@ -26,7 +23,7 @@
     gap: clamp(20px, 5vw, 80px);
     padding: 0;
     margin: 0;
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     font-size: clamp(14px, 2vw, 22px);
 }
 
@@ -61,7 +58,7 @@
 
 .menu a {
     text-decoration: none;
-    color: #f5f5f5;
+    color: #ff8888;
 }
 
 header {
@@ -73,6 +70,19 @@ header {
 
 .menu a:hover {
     color: #ffa5ad;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #EA6872;
+}
+
+.menu a:hover {
+    color: #e8f5e8;
 }
 
 .hamburguesa {
@@ -191,7 +201,7 @@ header {
     background: none;
     
     border: none;
-    border-top: 8px dotted #ccc;
+    border-bottom: 8px dotted #ccc;
    
 }
 

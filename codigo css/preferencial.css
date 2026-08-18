@@ -8,7 +8,73 @@
     margin: 0%;
 
 }
+.navBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px clamp(15px, 4vw, 50px);
+    top: 2vh;
+}
 
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: clamp(20px, 5vw, 80px);
+    padding: 0;
+    margin: 0;
+    font-family: "Manjari", sans-serif;
+    font-size: clamp(14px, 2vw, 22px);
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: clamp(70px, 10vw, 140px);
+    display: block;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 2vw, 25px);
+}
+
+.iconos a {
+    display: flex;
+    align-items: center;
+}
+
+.iconos a img,
+.iconos img {
+    width: clamp(24px, 3vw, 35px);
+    height: clamp(24px, 3vw, 35px);
+    object-fit: contain;
+}
+
+.menu a {
+    text-decoration: none;
+    color:#EA6872;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+   
+}
+
+.menu a:hover {
+    color: #ffa5ad;
+}
+
+.hamburguesa {
+    display: none;
+}
 .banner {
     width: 100%;
     height: 56vh;
@@ -115,12 +181,17 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border:none;
 }
 
 .compra:hover {
     background-color: #a3d19d;
 }
-
+#hola{
+    z-index: 1000;
+    position: absolute;
+    text-align: center;
+}
 .image {
 
     width: 400px;
@@ -252,6 +323,7 @@ h2 {
     margin-bottom: 3%;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 
 }
 .contenido-beneficio{

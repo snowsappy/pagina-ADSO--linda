@@ -8,22 +8,13 @@
     box-sizing: border-box;
 }
 
-
-
-
-header {
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
-    background: linear-gradient(to right, #3C8162 14.98%, #F4F4F4 10%);
-}
-
 .navBar {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px clamp(15px, 4vw, 50px);
+    top: 2vh;
 }
 
 .menu ul {
@@ -32,7 +23,7 @@ header {
     gap: clamp(20px, 5vw, 80px);
     padding: 0;
     margin: 0;
-    font-family: "Manjari", sans-serif;
+    font-family: "Manjari";
     font-size: clamp(14px, 2vw, 22px);
 }
 
@@ -65,6 +56,25 @@ header {
     object-fit: contain;
 }
 
+.menu a {
+    text-decoration: none;
+    color: #ff8888;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+   
+}
+
+.menu a:hover {
+    color: #ffa5ad;
+}
+
+.hamburguesa {
+    display: none;
+}
 
 .menu a {
     text-decoration: none;
@@ -78,9 +88,7 @@ header {
 .hamburguesa {
     display: none;
 }
-#productos{
-    color: #F4F4F4;
-}
+
 .perfil{
     display: grid;
     grid-template-columns: 285px 1fr;
@@ -138,7 +146,7 @@ header {
 
 .perfil-contenido {
     background: #F4F4F4;
-    margin-top: 3%;
+    
     padding: 7%;
     padding-left: 10%;
     padding-right: 10%;
@@ -155,7 +163,7 @@ header {
     color: #605656;
     text-align: center;
     position: relative;
-    bottom: 6%;
+    bottom: 2%;
 }
 
 

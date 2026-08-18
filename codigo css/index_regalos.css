@@ -121,7 +121,7 @@ input:checked+.button {
 }
 
 input:checked+.button::before {
-    transform: translate(-1050px);
+    transform: translate(-710%);
     background-image: url(../images/mini\ helado.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -823,7 +823,9 @@ input {
     .iconos {
         gap: 10px;
     }
-
+    input:checked+.button::before {
+    transform: translate(-225%);
+    }
     .iconos img {
         width: 30px;
     }
@@ -1325,7 +1327,9 @@ input {
         padding: 140px 20px 40px;
         height: auto;
     }
-
+     input:checked+.button::before {
+    transform: translate(-305%);
+    }
     .contenido-hero {
         padding: 0;
     }
