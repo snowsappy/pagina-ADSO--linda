@@ -26,6 +26,9 @@
     font-family: "Manjari";
     font-size: clamp(14px, 2vw, 22px);
 }
+.menu li {
+    color: #d6d1d1;
+}
 
 .logo {
     position: absolute;
@@ -82,7 +85,7 @@ header {
 }
 
 .menu a:hover {
-    color: #e8f5e8;
+    color: #ffa5ad;
 }
 
 .hamburguesa {
@@ -133,10 +136,16 @@ header {
     transition: 0.2s;
 }
 
-.link:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
 
+#productos{
+    
+    color: #e7e9e7;
+ 
+}
+#productos:hover{
+    color:#EA6872;
+    font-weight: 700;
+}
 .link.active {
     background: #fff;
     color: #73B577;

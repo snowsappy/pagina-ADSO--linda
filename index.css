@@ -672,14 +672,17 @@ h1 {
     display: flex;
     list-style: none;
     gap: 20px;
-    padding: 20px;
+    padding: 0%;
+    padding-top: 20px;
     margin: 0%;
+    transition: 0.3s ease-in-out;
 }
+
 
 .filtros li {
     color: #EA6872;
     border: 1px solid;
-    width: 17vh;
+    width: 19vh;
     height: 6.4vh;
     border-radius: 50px;
     display: flex;
